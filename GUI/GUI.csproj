@@ -126,6 +126,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_ThuVienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form_ChiTietHoaDon.resx">
       <DependentUpon>Form_ChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +194,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QL_ThuVienDataSet.xsc">
+      <DependentUpon>QL_ThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet.xss">
+      <DependentUpon>QL_ThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsc">
+      <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xss">
+      <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

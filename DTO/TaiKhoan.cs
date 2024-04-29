@@ -8,7 +8,7 @@ namespace DTO
 {
     public class TaiKhoan
     {
-        private string id_TaiKhoan;
+        private string maTK;
         private string hoTen;
         private string sdt;
         private string email;
@@ -18,7 +18,7 @@ namespace DTO
 
         public TaiKhoan()
         {
-            id_TaiKhoan = string.Empty;
+            maTK = string.Empty;
             hoTen = string.Empty;
             sdt = string.Empty;
             email = string.Empty;
@@ -27,9 +27,9 @@ namespace DTO
             trangThai = 0;
         }
 
-        public TaiKhoan(string id_TaiKhoan, string hoTen, string sdt, string email, string username, string password, int trangThai)
+        public TaiKhoan(string maTK, string hoTen, string sdt, string email, string username, string password, int trangThai)
         {
-            this.id_TaiKhoan = id_TaiKhoan;
+            this.maTK = maTK;
             this.hoTen = hoTen;
             this.sdt = sdt;
             this.email = email;
@@ -43,7 +43,7 @@ namespace DTO
             this.password = password;
         }
 
-        public string Id_TaiKhoan { get => id_TaiKhoan; set => id_TaiKhoan = value; }
+        public string MaTK { get => maTK; set => maTK = value; }
         public string HoTen { get => hoTen; set => hoTen = value; }
         public string Sdt { get => sdt; set => sdt = value; }
         public string Email { get => email; set => email = value; }

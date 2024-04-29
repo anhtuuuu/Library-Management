@@ -192,6 +192,7 @@
             this.link_DangNhap.TabIndex = 40;
             this.link_DangNhap.TabStop = true;
             this.link_DangNhap.Text = "Đăng nhập";
+            this.link_DangNhap.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_DangNhap_LinkClicked);
             // 
             // btn_DangKy
             // 
@@ -203,6 +204,7 @@
             this.btn_DangKy.TabIndex = 39;
             this.btn_DangKy.Text = "Đăng ký";
             this.btn_DangKy.UseVisualStyleBackColor = true;
+            this.btn_DangKy.Click += new System.EventHandler(this.btn_DangKy_Click);
             // 
             // pictureBox1
             // 

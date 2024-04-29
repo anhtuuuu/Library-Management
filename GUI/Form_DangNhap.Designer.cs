@@ -61,6 +61,7 @@
             this.link_DangKy.TabIndex = 31;
             this.link_DangKy.TabStop = true;
             this.link_DangKy.Text = "Đăng ký";
+            this.link_DangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_DangKy_LinkClicked);
             // 
             // txt_MatKhau
             // 
@@ -117,6 +118,7 @@
             this.link_QuenMatKhau.TabIndex = 26;
             this.link_QuenMatKhau.TabStop = true;
             this.link_QuenMatKhau.Text = "Quên mật khẩu";
+            this.link_QuenMatKhau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_QuenMatKhau_LinkClicked);
             // 
             // chk_HienMatKhau
             // 
@@ -128,6 +130,7 @@
             this.chk_HienMatKhau.TabIndex = 25;
             this.chk_HienMatKhau.Text = "Hiển thị mật khẩu";
             this.chk_HienMatKhau.UseVisualStyleBackColor = true;
+            this.chk_HienMatKhau.CheckedChanged += new System.EventHandler(this.chk_HienMatKhau_CheckedChanged);
             // 
             // btn_DangNhap
             // 
@@ -139,6 +142,7 @@
             this.btn_DangNhap.TabIndex = 24;
             this.btn_DangNhap.Text = "Đăng nhập";
             this.btn_DangNhap.UseVisualStyleBackColor = true;
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // pictureBox1
             // 

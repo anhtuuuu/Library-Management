@@ -8,22 +8,39 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GUI.Properties
-{
-
-
+namespace GUI.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.7.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=D:\\PROJECT_CSHARP\\LIBRARY_MANA" +
+            "GEMENT\\DAL\\LIBRARYDB.MDF;Integrated Security=True")]
+        public string D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFConnectionString {
+            get {
+                return ((string)(this["D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=QL_ThuVien;Integrated Security=True")]
+        public string QL_ThuVienConnectionString {
+            get {
+                return ((string)(this["QL_ThuVienConnectionString"]));
             }
         }
     }

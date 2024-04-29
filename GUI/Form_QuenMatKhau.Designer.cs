@@ -54,6 +54,7 @@
             this.btn_XacNhanOTP.TabIndex = 38;
             this.btn_XacNhanOTP.Text = "Xác nhận OTP";
             this.btn_XacNhanOTP.UseVisualStyleBackColor = true;
+            this.btn_XacNhanOTP.Click += new System.EventHandler(this.btn_XacNhanOTP_Click);
             // 
             // txt_MaXacNhan
             // 
@@ -119,10 +120,12 @@
             this.btn_GuiOTP.TabIndex = 32;
             this.btn_GuiOTP.Text = "Gửi OTP";
             this.btn_GuiOTP.UseVisualStyleBackColor = true;
+            this.btn_GuiOTP.Click += new System.EventHandler(this.btn_GuiOTP_Click);
             // 
             // timer_OTP
             // 
-            this.timer_OTP.Interval = 6000;
+            this.timer_OTP.Interval = 60000;
+            this.timer_OTP.Tick += new System.EventHandler(this.timer_OTP_Tick);
             // 
             // lbl_Counter
             // 
@@ -137,6 +140,7 @@
             // timer_Counter
             // 
             this.timer_Counter.Interval = 1000;
+            this.timer_Counter.Tick += new System.EventHandler(this.timer_Counter_Tick);
             // 
             // pictureBox1
             // 

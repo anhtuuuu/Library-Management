@@ -11,12 +11,14 @@ using System.Reflection;
 using System.ComponentModel;
 using System.Reflection.Emit;
 using System.CodeDom;
+using System.Collections;
+using System.Runtime.Remoting.Messaging;
 
 namespace DAL
 {
     public class Connection
     {
-        private static string _connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Project_CSharp\Library_Management\DAL\LibraryDB.mdf;Integrated Security=True";
+        private static string _connectionString = @"Data Source=(local);Initial Catalog=QL_ThuVien;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(_connectionString);
@@ -25,46 +27,60 @@ namespace DAL
     public class DatabaseAccess
     {
         SqlCommand sqlCommand;
-        SqlDataReader reader;
-        public List<TaiKhoan> TaiKhoans(string query)
-        {
-            List<TaiKhoan> taiKhoans = new List<TaiKhoan>();
-            using (SqlConnection sqlConnection = Connection.GetSqlConnection())
-            {
-                sqlConnection.Open();
-
-                sqlCommand = new SqlCommand(query, sqlConnection);
-                reader = sqlCommand.ExecuteReader();
-                while (reader.Read())
-                {
-                    taiKhoans.Add(new TaiKhoan(reader.GetString(4), reader.GetString(5)));
-                }
-                sqlConnection.Close();
-            }
-            return taiKhoans;
-        }
+        
         public void Command(string query)
         {
-            using (SqlConnection sqlConnection = Connection.GetSqlConnection())
+            try
             {
-                sqlConnection.Open();
-                sqlCommand = new SqlCommand(query, sqlConnection);
-                sqlCommand.ExecuteNonQuery();
-                sqlConnection.Close();
+                using (SqlConnection sqlConnection = Connection.GetSqlConnection())
+                {
+                    sqlConnection.Open();
+                    sqlCommand = new SqlCommand(query, sqlConnection);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERROR Command: " + ex.Message);
             }
         }
-        public DataSet ShowData(string query)
-        {
-            using (SqlConnection sqlConnection = Connection.GetSqlConnection())
-            {                
-                sqlConnection.Open();
-                SqlDataAdapter da = new SqlDataAdapter(query, sqlConnection);
 
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                //grid.DataSource = ds.Tables[0];
-                sqlConnection.Close();       
-                return ds;
+        public SqlDataReader Reader(string query, SqlConnection sqlConnection)
+        {
+            try
+            {               
+                    SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                    SqlDataReader reader = sqlCommand.ExecuteReader();
+                    return reader;
+               
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERROR Reader: " + ex.Message);
+            }
+            
+                
+        }
+        public DataSet GetData(string query)
+        {
+            try
+            {
+                using (SqlConnection sqlConnection = Connection.GetSqlConnection())
+                {
+                    sqlConnection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(query, sqlConnection);
+
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    //grid.DataSource = ds.Tables[0];
+                    sqlConnection.Close();
+                    return ds;
+                }
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("ERROR GetData: " + ex.Message);
             }
         }
     }
