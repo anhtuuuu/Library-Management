@@ -102,7 +102,7 @@ namespace GUI
         private void txt_TimKiem_TextChanged(object sender, EventArgs e)
         {
             string keyWord = txt_TimKiem.Text;
-            dgv_TaiKhoan.DataSource = taiKhoanBLL.Search(keyWord).Tables[0];
+            dgv_TaiKhoan.DataSource = taiKhoanBLL.SearchTK(keyWord).Tables[0];
         }
     }
 }

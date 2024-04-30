@@ -12,13 +12,13 @@ namespace DTO
         private string maLoaiSach;
         private string tenSach;
         private string xuatXu;
-        private int giaNhap;
-        private int giaChoThue;
+        private Decimal giaNhap;
+        private Decimal giaChoThue;
         private string donViTinh;
         private string maNhaCungCap;
         private int soLuong;
         private int trangThai;
-        private string hinhAnh;
+        private byte[] hinhAnh;
         private float khuyenMai;
 
         public Sach()
@@ -33,11 +33,11 @@ namespace DTO
             this.maNhaCungCap = "";
             this.soLuong = 0;
             this.trangThai = 0;
-            this.hinhAnh = "";
+            this.hinhAnh = null;
             this.khuyenMai = 0;
         }
 
-        public Sach(string maSach, string maLoaiSach, string tenSach, string xuatXu, int giaNhap, int giaChoThue, string donViTinh, string maNhaCungCap, int soLuong, int trangThai, string hinhAnh, float khuyenMai)
+        public Sach(string maSach, string maLoaiSach, string tenSach, string xuatXu, Decimal giaNhap, Decimal giaChoThue, string donViTinh, string maNhaCungCap, int soLuong, int trangThai, byte[] hinhAnh, float khuyenMai)
         {
             this.maSach = maSach;
             this.maLoaiSach = maLoaiSach;
@@ -57,13 +57,13 @@ namespace DTO
         public string MaLoaiSach { get => maLoaiSach; set => maLoaiSach = value; }
         public string TenSach { get => tenSach; set => tenSach = value; }
         public string XuatXu { get => xuatXu; set => xuatXu = value; }
-        public int GiaNhap { get => giaNhap; set => giaNhap = value; }
-        public int GiaChoThue { get => giaChoThue; set => giaChoThue = value; }
+        public Decimal GiaNhap { get => giaNhap; set => giaNhap = value; }
+        public Decimal GiaChoThue { get => giaChoThue; set => giaChoThue = value; }
         public string DonViTinh { get => donViTinh; set => donViTinh = value; }
         public string MaNhaCungCap { get => maNhaCungCap; set => maNhaCungCap = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
         public int TrangThai { get => trangThai; set => trangThai = value; }
-        public string HinhAnh { get => hinhAnh; set => hinhAnh = value; }
+        public byte[] HinhAnh { get => hinhAnh; set => hinhAnh = value; }
         public float KhuyenMai { get => khuyenMai; set => khuyenMai = value; }
     }
 }

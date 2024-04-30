@@ -213,18 +213,11 @@ namespace DAL
             }
         }
 
-        public DataSet Search(string keyWord)
+        public DataSet SearchTK(string keyWord)
         {
             string query = "SELECT * FROM TaiKhoan WHERE MaTK like '" + keyWord + "%' OR HoTen like N'%" + keyWord + "%' OR Sdt like '%" + keyWord + "%' OR Email like '%" + keyWord + "%' OR Username like '%" + keyWord + "%' OR Password like '%" + keyWord + "%'" ;
-            try
-            {
-               DataSet data = GetData(query);
-                return data;
-            }
-            catch(Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            DataSet result = Search(query);
+            return result;
         }
     }
 }

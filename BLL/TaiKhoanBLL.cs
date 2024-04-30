@@ -102,10 +102,10 @@ namespace BLL
             return taiKhoanDAL.SuaTaiKhoan(taiKhoan);
         }
 
-        public DataSet Search(string keyWord)
+        public DataSet SearchTK(string keyWord)
         {
             TaiKhoanDAL taiKhoanDAL = new TaiKhoanDAL();
-            return taiKhoanDAL.Search(keyWord);
+            return taiKhoanDAL.SearchTK(keyWord);
         }
     }
 }

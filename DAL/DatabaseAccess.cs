@@ -83,5 +83,17 @@ namespace DAL
                 throw new Exception("ERROR GetData: " + ex.Message);
             }
         }
+        public DataSet Search(string query)
+        {
+            try
+            {
+                DataSet data = GetData(query);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
