@@ -23,8 +23,9 @@ namespace GUI
 
         private void Form_QuanLySach_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qL_ThuVienDataSet1.Sach' table. You can move, or remove it, as needed.
-            this.sachTableAdapter.Fill(this.qL_ThuVienDataSet1.Sach);
+            // TODO: This line of code loads data into the 'library_managementDataSet2.Sach' table. You can move, or remove it, as needed.
+            this.sachTableAdapter.Fill(this.library_managementDataSet2.Sach);
+
             DataSet ls = sachBLL.GetLoaiSach();
             for (int i = 0; i < ls.Tables[0].Rows.Count; i++)
                 cbo_MaLoaiSach.Items.Add(ls.Tables[0].Rows[i][0].ToString());
@@ -48,6 +49,7 @@ namespace GUI
             txt_GiaChoThue.Text = string.Empty;
             txt_KhuyenMai.Text = string.Empty;
             txt_XuatXu.Text = string.Empty;
+            txt_TacGia.Text = string.Empty;
             cbo_DonViTinh.Text = string.Empty;
             txt_SoLuong.Text = string.Empty;
             cbo_TrangThai.Text = string.Empty;
@@ -65,6 +67,7 @@ namespace GUI
             txt_GiaChoThue.ReadOnly = false;
             txt_KhuyenMai.ReadOnly = false;
             txt_XuatXu.ReadOnly = false;
+            txt_TacGia.ReadOnly = false;
             cbo_DonViTinh.Enabled = true;
             txt_SoLuong.ReadOnly = false;
         }
@@ -78,6 +81,7 @@ namespace GUI
             txt_GiaChoThue.ReadOnly = true;
             txt_KhuyenMai.ReadOnly = true;
             txt_XuatXu.ReadOnly = true;
+            txt_TacGia.ReadOnly = true;
             cbo_DonViTinh.Enabled = false;
             txt_SoLuong.ReadOnly = true;
         }
@@ -167,14 +171,15 @@ namespace GUI
             cbo_MaLoaiSach.Text = data.Cells[1].Value.ToString();
             txt_TenSach.Text = data.Cells[2].Value.ToString();
             txt_XuatXu.Text = data.Cells[3].Value.ToString();
-            txt_GiaNhap.Text = data.Cells[4].Value.ToString();
-            txt_GiaChoThue.Text = data.Cells[5].Value.ToString();
-            cbo_DonViTinh.Text = data.Cells[6].Value.ToString();
-            cbo_MaNCC.Text = data.Cells[7].Value.ToString();
-            txt_SoLuong.Text = data.Cells[8].Value.ToString();
-            cbo_TrangThai.Text = (data.Cells[9].Value.ToString() == "1"? "Còn Hàng":"Hết Hàng");
-            pic_HinhAnh.ImageLocation = data.Cells[10].Value.ToString();
-            txt_KhuyenMai.Text = data.Cells[11].Value.ToString();
+            txt_TacGia.Text = data.Cells[4].Value.ToString();
+            txt_GiaNhap.Text = data.Cells[5].Value.ToString();
+            txt_GiaChoThue.Text = data.Cells[6].Value.ToString();
+            cbo_DonViTinh.Text = data.Cells[7].Value.ToString();
+            cbo_MaNCC.Text = data.Cells[8].Value.ToString();
+            txt_SoLuong.Text = data.Cells[9].Value.ToString();
+            cbo_TrangThai.Text = (data.Cells[10].Value.ToString() == "1"? "Còn Hàng":"Hết Hàng");
+            pic_HinhAnh.ImageLocation = data.Cells[11].Value.ToString();
+            txt_KhuyenMai.Text = data.Cells[12].Value.ToString();
         }
 
         private byte[] convertImageToBytes()
@@ -212,6 +217,7 @@ namespace GUI
                     MaNhaCungCap = cbo_MaNCC.Text,
                     TenSach = txt_TenSach.Text,
                     XuatXu = txt_XuatXu.Text,
+                    TacGia = txt_TacGia.Text,
                     GiaNhap = int.Parse(txt_GiaNhap.Text),
                     GiaChoThue = int.Parse(txt_GiaChoThue.Text),
                     DonViTinh = cbo_DonViTinh.Text,
@@ -248,6 +254,7 @@ namespace GUI
                     MaNhaCungCap = cbo_MaNCC.Text,
                     TenSach = txt_TenSach.Text,
                     XuatXu = txt_XuatXu.Text,
+                    TacGia = txt_TacGia.Text,
                     GiaNhap = int.Parse(txt_GiaNhap.Text),
                     GiaChoThue = int.Parse(txt_GiaChoThue.Text),
                     DonViTinh = cbo_DonViTinh.Text,

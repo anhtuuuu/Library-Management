@@ -44,7 +44,6 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lbl_MaLoaiSach = new System.Windows.Forms.Label();
-            this.cbo_MaSach = new System.Windows.Forms.ComboBox();
             this.lbl_MaSanPham = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -70,6 +69,10 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btn_Them = new System.Windows.Forms.Button();
             this.lvw_DanhSachDocGia = new System.Windows.Forms.ListView();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lbl_HanTra = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btn_Them1Thang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dateTimePicker3
@@ -182,7 +185,6 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Enabled = false;
             this.dateTimePicker2.Location = new System.Drawing.Point(115, 165);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(240, 22);
@@ -193,7 +195,7 @@
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 126);
+            this.comboBox1.Location = new System.Drawing.Point(115, 128);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(133, 24);
             this.comboBox1.TabIndex = 206;
@@ -209,16 +211,6 @@
             this.lbl_MaLoaiSach.Size = new System.Drawing.Size(92, 17);
             this.lbl_MaLoaiSach.TabIndex = 205;
             this.lbl_MaLoaiSach.Text = "Mã Hóa Đơn";
-            // 
-            // cbo_MaSach
-            // 
-            this.cbo_MaSach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbo_MaSach.FormattingEnabled = true;
-            this.cbo_MaSach.Location = new System.Drawing.Point(115, 94);
-            this.cbo_MaSach.Name = "cbo_MaSach";
-            this.cbo_MaSach.Size = new System.Drawing.Size(133, 24);
-            this.cbo_MaSach.TabIndex = 204;
             // 
             // lbl_MaSanPham
             // 
@@ -511,12 +503,53 @@
             this.lvw_DanhSachDocGia.View = System.Windows.Forms.View.Details;
             this.lvw_DanhSachDocGia.VirtualMode = true;
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(115, 98);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(143, 22);
+            this.textBox4.TabIndex = 219;
+            // 
+            // lbl_HanTra
+            // 
+            this.lbl_HanTra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_HanTra.AutoSize = true;
+            this.lbl_HanTra.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_HanTra.Location = new System.Drawing.Point(19, 210);
+            this.lbl_HanTra.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_HanTra.Name = "lbl_HanTra";
+            this.lbl_HanTra.Size = new System.Drawing.Size(61, 17);
+            this.lbl_HanTra.TabIndex = 221;
+            this.lbl_HanTra.Text = "Hạn Trả";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(115, 205);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(240, 22);
+            this.dateTimePicker1.TabIndex = 220;
+            // 
+            // btn_Them1Thang
+            // 
+            this.btn_Them1Thang.BackColor = System.Drawing.Color.Aquamarine;
+            this.btn_Them1Thang.Location = new System.Drawing.Point(115, 233);
+            this.btn_Them1Thang.Name = "btn_Them1Thang";
+            this.btn_Them1Thang.Size = new System.Drawing.Size(88, 30);
+            this.btn_Them1Thang.TabIndex = 222;
+            this.btn_Them1Thang.Text = "+ 1 tháng";
+            this.btn_Them1Thang.UseVisualStyleBackColor = false;
+            // 
             // Form_QuanLyHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Them1Thang);
+            this.Controls.Add(this.lbl_HanTra);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox4);
@@ -531,7 +564,6 @@
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lbl_MaLoaiSach);
-            this.Controls.Add(this.cbo_MaSach);
             this.Controls.Add(this.lbl_MaSanPham);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -573,7 +605,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lbl_MaLoaiSach;
-        private System.Windows.Forms.ComboBox cbo_MaSach;
         private System.Windows.Forms.Label lbl_MaSanPham;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
@@ -599,5 +630,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.ListView lvw_DanhSachDocGia;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label lbl_HanTra;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btn_Them1Thang;
     }
 }

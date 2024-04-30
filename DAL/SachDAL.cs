@@ -32,20 +32,22 @@ namespace DAL
                     if (!reader.IsDBNull(3))
                         sach.XuatXu = reader.GetString(3);
                     if (!reader.IsDBNull(4))
-                        sach.GiaNhap = reader.GetDecimal(4);
+                        sach.TacGia = reader.GetString(4);
                     if (!reader.IsDBNull(5))
-                        sach.GiaChoThue = reader.GetDecimal(5);
+                        sach.GiaNhap = reader.GetDecimal(5);
                     if (!reader.IsDBNull(6))
-                        sach.DonViTinh = reader.GetString(6);
+                        sach.GiaChoThue = reader.GetDecimal(6);
                     if (!reader.IsDBNull(7))
-                        sach.MaNhaCungCap = reader.GetString(7);
+                        sach.DonViTinh = reader.GetString(7);
                     if (!reader.IsDBNull(8))
-                        sach.SoLuong = reader.GetInt32(8);
+                        sach.MaNhaCungCap = reader.GetString(8);
                     if (!reader.IsDBNull(9))
-                        sach.TrangThai = reader.GetInt32(9);
+                        sach.SoLuong = reader.GetInt32(9);
                     if (!reader.IsDBNull(10))
-                        sach.HinhAnh = null;
+                        sach.TrangThai = reader.GetInt32(10);
                     if (!reader.IsDBNull(11))
+                        sach.HinhAnh = null;
+                    if (!reader.IsDBNull(12))
                         sach.KhuyenMai = 0;
                     sachs.Add(sach);
                 }
@@ -56,7 +58,7 @@ namespace DAL
 
         public string ThemSach(Sach sach)
         {
-            string query = "INSERT INTO Sach VALUES ('" + sach.MaSach + "', '" + sach.MaLoaiSach + "', N'" + sach.TenSach + "', '" + sach.XuatXu + "', " + sach.GiaNhap + ", " + sach.GiaChoThue + ", N'" + sach.DonViTinh + "', '" + sach.MaNhaCungCap + "', " + sach.SoLuong + ", " + sach.TrangThai + ", '" + sach.HinhAnh + "', " + sach.KhuyenMai + ") ";
+            string query = "INSERT INTO Sach VALUES ('" + sach.MaSach + "', '" + sach.MaLoaiSach + "', N'" + sach.TenSach + "', N'" + sach.XuatXu + "', N'" + sach.TacGia + "'," + sach.GiaNhap + ", " + sach.GiaChoThue + ", N'" + sach.DonViTinh + "', '" + sach.MaNhaCungCap + "', " + sach.SoLuong + ", " + sach.TrangThai + ", NULL, " + sach.KhuyenMai + ") ";
 
             try
             {
@@ -71,7 +73,7 @@ namespace DAL
 
         public DataSet GetLoaiSach()
         {
-            string query = "SELECT * FROM LoaiSach";
+            string query = "SELECT * FROM LoaiSach WHERE TrangThai = 1";
             try
             {
                 DataSet sach = GetData(query);
@@ -84,7 +86,7 @@ namespace DAL
         }
         public DataSet GetNhaCungCap()
         {
-            string query = "SELECT * FROM NhaCungCap";
+            string query = "SELECT * FROM NhaCungCap WHERE TrangThai = 1";
             try
             {
                 DataSet sach = GetData(query);
@@ -98,7 +100,7 @@ namespace DAL
 
         public string SuaSach(Sach sach)
         {
-            string query = "UPDATE Sach SET MaLoaiSach = '" + sach.MaLoaiSach + "', TenSach = N'" + sach.TenSach + "', XuatXu = N'" + sach.XuatXu + "', GiaNhap = " + sach.GiaNhap + ", GiaChoThue = " + sach.GiaChoThue + ", DonViTinh = N'" + sach.DonViTinh + "', MaNhaCungCap = '" + sach.MaNhaCungCap + "', SoLuong = " + sach.SoLuong + ", TrangThai = " + sach.TrangThai +", KhuyenMai = " + sach.KhuyenMai + " WHERE MaSach = '" + sach.MaSach + "' ";
+            string query = "UPDATE Sach SET MaLoaiSach = '" + sach.MaLoaiSach + "', TenSach = N'" + sach.TenSach + "', XuatXu = N'" + sach.XuatXu + "', TacGia = N'" + sach.TacGia + "', GiaNhap = " + sach.GiaNhap + ", GiaChoThue = " + sach.GiaChoThue + ", DonViTinh = N'" + sach.DonViTinh + "', MaNhaCungCap = '" + sach.MaNhaCungCap + "', SoLuong = " + sach.SoLuong + ", TrangThai = " + sach.TrangThai +", KhuyenMai = " + sach.KhuyenMai + " WHERE MaSach = '" + sach.MaSach + "' ";
             try
             {
                 Command(query);
@@ -125,7 +127,7 @@ namespace DAL
         }
         public DataSet SearchSach(string keyWord)
         {
-            string query = "SELECT * FROM Sach WHERE MaSach like '" + keyWord + "%' OR MaLoaiSach like '" + keyWord + "%' OR MaNhaCungCap like '" + keyWord + "%' OR TenSach like N'%" + keyWord + "%' OR XuatXu like N'%" + keyWord + "%' ";
+            string query = "SELECT * FROM Sach WHERE MaSach like '" + keyWord + "%' OR MaLoaiSach like '" + keyWord + "%' OR MaNhaCungCap like '" + keyWord + "%' OR TenSach like N'%" + keyWord + "%' OR XuatXu like N'%" + keyWord + "%' OR TacGia like N'%" + keyWord + "%' ";
             DataSet result = Search(query);
             return result;
         }

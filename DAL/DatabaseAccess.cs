@@ -18,7 +18,7 @@ namespace DAL
 {
     public class Connection
     {
-        private static string _connectionString = @"Data Source=(local);Initial Catalog=QL_ThuVien;Integrated Security=True";
+        private static string _connectionString = @"Data Source=(local);Initial Catalog=Library_management;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(_connectionString);
