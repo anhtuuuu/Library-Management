@@ -50,18 +50,23 @@
             this.btn_CapNhat = new System.Windows.Forms.Button();
             this.txt_MaLoaiSach = new System.Windows.Forms.TextBox();
             this.dgv_LoaiSach = new System.Windows.Forms.DataGridView();
-            this.qL_ThuVienDataSet5 = new GUI.QL_ThuVienDataSet5();
-            this.loaiSachBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.loaiSachTableAdapter = new GUI.QL_ThuVienDataSet5TableAdapters.LoaiSachTableAdapter();
             this.maLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiSachBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.library_managementDataSet3 = new GUI.Library_managementDataSet3();
+            this.loaiSachBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qL_ThuVienDataSet5 = new GUI.QL_ThuVienDataSet5();
+            this.loaiSachTableAdapter = new GUI.QL_ThuVienDataSet5TableAdapters.LoaiSachTableAdapter();
             this.txt_TrangThai = new System.Windows.Forms.TextBox();
             this.lbl_TrangThai = new System.Windows.Forms.Label();
+            this.loaiSachTableAdapter1 = new GUI.Library_managementDataSet3TableAdapters.LoaiSachTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_LoaiSach)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loaiSachBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_managementDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loaiSachBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_TenLoaiSach
@@ -132,6 +137,7 @@
             this.txt_TimKiem.Name = "txt_TimKiem";
             this.txt_TimKiem.Size = new System.Drawing.Size(156, 22);
             this.txt_TimKiem.TabIndex = 194;
+            this.txt_TimKiem.TextChanged += new System.EventHandler(this.txt_TimKiem_TextChanged);
             // 
             // groupBox1
             // 
@@ -316,7 +322,7 @@
             this.maLoaiSachDataGridViewTextBoxColumn,
             this.tenLoaiSachDataGridViewTextBoxColumn,
             this.trangThaiDataGridViewTextBoxColumn});
-            this.dgv_LoaiSach.DataSource = this.loaiSachBindingSource;
+            this.dgv_LoaiSach.DataSource = this.loaiSachBindingSource1;
             this.dgv_LoaiSach.Location = new System.Drawing.Point(12, 336);
             this.dgv_LoaiSach.Name = "dgv_LoaiSach";
             this.dgv_LoaiSach.RowHeadersWidth = 51;
@@ -325,20 +331,6 @@
             this.dgv_LoaiSach.Size = new System.Drawing.Size(914, 230);
             this.dgv_LoaiSach.TabIndex = 200;
             this.dgv_LoaiSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_LoaiSach_CellContentClick);
-            // 
-            // qL_ThuVienDataSet5
-            // 
-            this.qL_ThuVienDataSet5.DataSetName = "QL_ThuVienDataSet5";
-            this.qL_ThuVienDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // loaiSachBindingSource
-            // 
-            this.loaiSachBindingSource.DataMember = "LoaiSach";
-            this.loaiSachBindingSource.DataSource = this.qL_ThuVienDataSet5;
-            // 
-            // loaiSachTableAdapter
-            // 
-            this.loaiSachTableAdapter.ClearBeforeFill = true;
             // 
             // maLoaiSachDataGridViewTextBoxColumn
             // 
@@ -364,6 +356,30 @@
             this.trangThaiDataGridViewTextBoxColumn.Name = "trangThaiDataGridViewTextBoxColumn";
             this.trangThaiDataGridViewTextBoxColumn.Width = 125;
             // 
+            // loaiSachBindingSource1
+            // 
+            this.loaiSachBindingSource1.DataMember = "LoaiSach";
+            this.loaiSachBindingSource1.DataSource = this.library_managementDataSet3;
+            // 
+            // library_managementDataSet3
+            // 
+            this.library_managementDataSet3.DataSetName = "Library_managementDataSet3";
+            this.library_managementDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // loaiSachBindingSource
+            // 
+            this.loaiSachBindingSource.DataMember = "LoaiSach";
+            this.loaiSachBindingSource.DataSource = this.qL_ThuVienDataSet5;
+            // 
+            // qL_ThuVienDataSet5
+            // 
+            this.qL_ThuVienDataSet5.DataSetName = "QL_ThuVienDataSet5";
+            this.qL_ThuVienDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // loaiSachTableAdapter
+            // 
+            this.loaiSachTableAdapter.ClearBeforeFill = true;
+            // 
             // txt_TrangThai
             // 
             this.txt_TrangThai.Location = new System.Drawing.Point(144, 176);
@@ -381,6 +397,10 @@
             this.lbl_TrangThai.Size = new System.Drawing.Size(83, 16);
             this.lbl_TrangThai.TabIndex = 201;
             this.lbl_TrangThai.Text = "Trạng Thái";
+            // 
+            // loaiSachTableAdapter1
+            // 
+            this.loaiSachTableAdapter1.ClearBeforeFill = true;
             // 
             // Form_LoaiSach
             // 
@@ -405,8 +425,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_LoaiSach)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loaiSachBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_managementDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loaiSachBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,5 +463,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txt_TrangThai;
         private System.Windows.Forms.Label lbl_TrangThai;
+        private Library_managementDataSet3 library_managementDataSet3;
+        private System.Windows.Forms.BindingSource loaiSachBindingSource1;
+        private Library_managementDataSet3TableAdapters.LoaiSachTableAdapter loaiSachTableAdapter1;
     }
 }

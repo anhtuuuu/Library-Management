@@ -33,6 +33,7 @@
             this.txt_MaDocGia = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Xoa = new System.Windows.Forms.Button();
+            this.imgHinhAnh = new System.Windows.Forms.ImageList(this.components);
             this.btn_Them = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,15 +55,14 @@
             this.txt_TimKiem = new System.Windows.Forms.TextBox();
             this.lbl_TenDocGia = new System.Windows.Forms.Label();
             this.lbl_MaDocGia = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.imgHinhAnh = new System.Windows.Forms.ImageList(this.components);
+            this.dgv_DocGia = new System.Windows.Forms.DataGridView();
             this.lbl_NgayTao = new System.Windows.Forms.Label();
             this.txt_TrangThai = new System.Windows.Forms.TextBox();
             this.lbl_TrangThai = new System.Windows.Forms.Label();
             this.dtp_NgayTao = new System.Windows.Forms.DateTimePicker();
-            this.qL_ThuVienDataSet6 = new GUI.QL_ThuVienDataSet6();
+            this.library_managementDataSet5 = new GUI.Library_managementDataSet5();
             this.docGiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.docGiaTableAdapter = new GUI.QL_ThuVienDataSet6TableAdapters.DocGiaTableAdapter();
+            this.docGiaTableAdapter = new GUI.Library_managementDataSet5TableAdapters.DocGiaTableAdapter();
             this.maDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,8 +71,8 @@
             this.ngayTaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DocGia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_managementDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.docGiaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +117,22 @@
             this.btn_Xoa.Size = new System.Drawing.Size(50, 34);
             this.btn_Xoa.TabIndex = 96;
             this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // imgHinhAnh
+            // 
+            this.imgHinhAnh.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgHinhAnh.ImageStream")));
+            this.imgHinhAnh.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgHinhAnh.Images.SetKeyName(0, "addimage.png");
+            this.imgHinhAnh.Images.SetKeyName(1, "refresh.png");
+            this.imgHinhAnh.Images.SetKeyName(2, "delete-181.png");
+            this.imgHinhAnh.Images.SetKeyName(3, "Exit.png");
+            this.imgHinhAnh.Images.SetKeyName(4, "back.jpg");
+            this.imgHinhAnh.Images.SetKeyName(5, "sua1.png");
+            this.imgHinhAnh.Images.SetKeyName(6, "search.png");
+            this.imgHinhAnh.Images.SetKeyName(7, "save.png");
+            this.imgHinhAnh.Images.SetKeyName(8, "DocGia.png");
+            this.imgHinhAnh.Images.SetKeyName(9, "OIP.jpg");
             // 
             // btn_Them
             // 
@@ -131,6 +147,7 @@
             this.btn_Them.Size = new System.Drawing.Size(50, 34);
             this.btn_Them.TabIndex = 95;
             this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // btn_Thoat
             // 
@@ -145,6 +162,7 @@
             this.btn_Thoat.Size = new System.Drawing.Size(50, 34);
             this.btn_Thoat.TabIndex = 99;
             this.btn_Thoat.UseVisualStyleBackColor = true;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // label8
             // 
@@ -219,6 +237,7 @@
             this.btn_Sua.Size = new System.Drawing.Size(50, 34);
             this.btn_Sua.TabIndex = 97;
             this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_LamMoi
             // 
@@ -233,6 +252,7 @@
             this.btn_LamMoi.Size = new System.Drawing.Size(50, 34);
             this.btn_LamMoi.TabIndex = 98;
             this.btn_LamMoi.UseVisualStyleBackColor = true;
+            this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
             // btn_CapNhat
             // 
@@ -246,6 +266,7 @@
             this.btn_CapNhat.TabIndex = 167;
             this.btn_CapNhat.Text = "Cập nhật";
             this.btn_CapNhat.UseVisualStyleBackColor = false;
+            this.btn_CapNhat.Click += new System.EventHandler(this.btn_CapNhat_Click);
             // 
             // txt_Email
             // 
@@ -347,6 +368,7 @@
             this.txt_TimKiem.Name = "txt_TimKiem";
             this.txt_TimKiem.Size = new System.Drawing.Size(156, 22);
             this.txt_TimKiem.TabIndex = 147;
+            this.txt_TimKiem.TextChanged += new System.EventHandler(this.txt_TimKiem_TextChanged);
             // 
             // lbl_TenDocGia
             // 
@@ -374,11 +396,11 @@
             this.lbl_MaDocGia.TabIndex = 145;
             this.lbl_MaDocGia.Text = "Mã Độc Giả";
             // 
-            // dataGridView1
+            // dgv_DocGia
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_DocGia.AutoGenerateColumns = false;
+            this.dgv_DocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_DocGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maDGDataGridViewTextBoxColumn,
             this.tenDGDataGridViewTextBoxColumn,
             this.diaChiDataGridViewTextBoxColumn,
@@ -386,29 +408,16 @@
             this.sDTDataGridViewTextBoxColumn,
             this.ngayTaoDataGridViewTextBoxColumn,
             this.trangThaiDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.docGiaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 328);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(927, 238);
-            this.dataGridView1.TabIndex = 174;
-            // 
-            // imgHinhAnh
-            // 
-            this.imgHinhAnh.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgHinhAnh.ImageStream")));
-            this.imgHinhAnh.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgHinhAnh.Images.SetKeyName(0, "addimage.png");
-            this.imgHinhAnh.Images.SetKeyName(1, "refresh.png");
-            this.imgHinhAnh.Images.SetKeyName(2, "delete-181.png");
-            this.imgHinhAnh.Images.SetKeyName(3, "Exit.png");
-            this.imgHinhAnh.Images.SetKeyName(4, "back.jpg");
-            this.imgHinhAnh.Images.SetKeyName(5, "sua1.png");
-            this.imgHinhAnh.Images.SetKeyName(6, "search.png");
-            this.imgHinhAnh.Images.SetKeyName(7, "save.png");
-            this.imgHinhAnh.Images.SetKeyName(8, "DocGia.png");
-            this.imgHinhAnh.Images.SetKeyName(9, "OIP.jpg");
+            this.dgv_DocGia.DataSource = this.docGiaBindingSource;
+            this.dgv_DocGia.Location = new System.Drawing.Point(8, 328);
+            this.dgv_DocGia.Name = "dgv_DocGia";
+            this.dgv_DocGia.ReadOnly = true;
+            this.dgv_DocGia.RowHeadersWidth = 51;
+            this.dgv_DocGia.RowTemplate.Height = 24;
+            this.dgv_DocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_DocGia.Size = new System.Drawing.Size(927, 238);
+            this.dgv_DocGia.TabIndex = 174;
+            this.dgv_DocGia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DocGia_CellContentClick);
             // 
             // lbl_NgayTao
             // 
@@ -446,21 +455,24 @@
             // 
             // dtp_NgayTao
             // 
+            this.dtp_NgayTao.CustomFormat = "";
             this.dtp_NgayTao.Enabled = false;
+            this.dtp_NgayTao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayTao.Location = new System.Drawing.Point(506, 144);
             this.dtp_NgayTao.Name = "dtp_NgayTao";
-            this.dtp_NgayTao.Size = new System.Drawing.Size(200, 22);
+            this.dtp_NgayTao.Size = new System.Drawing.Size(170, 22);
             this.dtp_NgayTao.TabIndex = 179;
+            this.dtp_NgayTao.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
-            // qL_ThuVienDataSet6
+            // library_managementDataSet5
             // 
-            this.qL_ThuVienDataSet6.DataSetName = "QL_ThuVienDataSet6";
-            this.qL_ThuVienDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.library_managementDataSet5.DataSetName = "Library_managementDataSet5";
+            this.library_managementDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // docGiaBindingSource
             // 
             this.docGiaBindingSource.DataMember = "DocGia";
-            this.docGiaBindingSource.DataSource = this.qL_ThuVienDataSet6;
+            this.docGiaBindingSource.DataSource = this.library_managementDataSet5;
             // 
             // docGiaTableAdapter
             // 
@@ -469,25 +481,28 @@
             // maDGDataGridViewTextBoxColumn
             // 
             this.maDGDataGridViewTextBoxColumn.DataPropertyName = "MaDG";
-            this.maDGDataGridViewTextBoxColumn.HeaderText = "Mã Độc Giả";
+            this.maDGDataGridViewTextBoxColumn.HeaderText = "MaDG";
             this.maDGDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.maDGDataGridViewTextBoxColumn.Name = "maDGDataGridViewTextBoxColumn";
+            this.maDGDataGridViewTextBoxColumn.ReadOnly = true;
             this.maDGDataGridViewTextBoxColumn.Width = 125;
             // 
             // tenDGDataGridViewTextBoxColumn
             // 
             this.tenDGDataGridViewTextBoxColumn.DataPropertyName = "TenDG";
-            this.tenDGDataGridViewTextBoxColumn.HeaderText = "Tên Độc Giả";
+            this.tenDGDataGridViewTextBoxColumn.HeaderText = "TenDG";
             this.tenDGDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tenDGDataGridViewTextBoxColumn.Name = "tenDGDataGridViewTextBoxColumn";
+            this.tenDGDataGridViewTextBoxColumn.ReadOnly = true;
             this.tenDGDataGridViewTextBoxColumn.Width = 125;
             // 
             // diaChiDataGridViewTextBoxColumn
             // 
             this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa Chỉ";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
             this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            this.diaChiDataGridViewTextBoxColumn.ReadOnly = true;
             this.diaChiDataGridViewTextBoxColumn.Width = 125;
             // 
             // emailDataGridViewTextBoxColumn
@@ -496,30 +511,34 @@
             this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
             this.emailDataGridViewTextBoxColumn.Width = 125;
             // 
             // sDTDataGridViewTextBoxColumn
             // 
             this.sDTDataGridViewTextBoxColumn.DataPropertyName = "SDT";
-            this.sDTDataGridViewTextBoxColumn.HeaderText = "SĐT";
+            this.sDTDataGridViewTextBoxColumn.HeaderText = "SDT";
             this.sDTDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sDTDataGridViewTextBoxColumn.Name = "sDTDataGridViewTextBoxColumn";
+            this.sDTDataGridViewTextBoxColumn.ReadOnly = true;
             this.sDTDataGridViewTextBoxColumn.Width = 125;
             // 
             // ngayTaoDataGridViewTextBoxColumn
             // 
             this.ngayTaoDataGridViewTextBoxColumn.DataPropertyName = "NgayTao";
-            this.ngayTaoDataGridViewTextBoxColumn.HeaderText = "Ngày Tạo";
+            this.ngayTaoDataGridViewTextBoxColumn.HeaderText = "NgayTao";
             this.ngayTaoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ngayTaoDataGridViewTextBoxColumn.Name = "ngayTaoDataGridViewTextBoxColumn";
+            this.ngayTaoDataGridViewTextBoxColumn.ReadOnly = true;
             this.ngayTaoDataGridViewTextBoxColumn.Width = 125;
             // 
             // trangThaiDataGridViewTextBoxColumn
             // 
             this.trangThaiDataGridViewTextBoxColumn.DataPropertyName = "TrangThai";
-            this.trangThaiDataGridViewTextBoxColumn.HeaderText = "Trạng Thái";
+            this.trangThaiDataGridViewTextBoxColumn.HeaderText = "TrangThai";
             this.trangThaiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.trangThaiDataGridViewTextBoxColumn.Name = "trangThaiDataGridViewTextBoxColumn";
+            this.trangThaiDataGridViewTextBoxColumn.ReadOnly = true;
             this.trangThaiDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form_QuanLyDocGia
@@ -532,7 +551,7 @@
             this.Controls.Add(this.txt_TrangThai);
             this.Controls.Add(this.lbl_TrangThai);
             this.Controls.Add(this.lbl_NgayTao);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_DocGia);
             this.Controls.Add(this.txt_MaDocGia);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_CapNhat);
@@ -547,13 +566,14 @@
             this.Controls.Add(this.txt_TimKiem);
             this.Controls.Add(this.lbl_TenDocGia);
             this.Controls.Add(this.lbl_MaDocGia);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Name = "Form_QuanLyDocGia";
             this.Text = "Form_QuanLyDocGia";
             this.Load += new System.EventHandler(this.Form_QuanLyDocGia_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DocGia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_managementDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.docGiaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -585,15 +605,15 @@
         private System.Windows.Forms.TextBox txt_TimKiem;
         private System.Windows.Forms.Label lbl_TenDocGia;
         private System.Windows.Forms.Label lbl_MaDocGia;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_DocGia;
         private System.Windows.Forms.ImageList imgHinhAnh;
         private System.Windows.Forms.Label lbl_NgayTao;
         private System.Windows.Forms.TextBox txt_TrangThai;
         private System.Windows.Forms.Label lbl_TrangThai;
         private System.Windows.Forms.DateTimePicker dtp_NgayTao;
-        private QL_ThuVienDataSet6 qL_ThuVienDataSet6;
+        private Library_managementDataSet5 library_managementDataSet5;
         private System.Windows.Forms.BindingSource docGiaBindingSource;
-        private QL_ThuVienDataSet6TableAdapters.DocGiaTableAdapter docGiaTableAdapter;
+        private Library_managementDataSet5TableAdapters.DocGiaTableAdapter docGiaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn maDGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenDGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;

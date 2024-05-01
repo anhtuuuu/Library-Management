@@ -22,8 +22,10 @@ namespace GUI
 
         private void Form_LoaiSach_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'library_managementDataSet3.LoaiSach' table. You can move, or remove it, as needed.
+            this.loaiSachTableAdapter1.Fill(this.library_managementDataSet3.LoaiSach);
             // TODO: This line of code loads data into the 'qL_ThuVienDataSet5.LoaiSach' table. You can move, or remove it, as needed.
-            this.loaiSachTableAdapter.Fill(this.qL_ThuVienDataSet5.LoaiSach);
+            //this.loaiSachTableAdapter.Fill(this.qL_ThuVienDataSet5.LoaiSach);
 
 
         }
@@ -75,6 +77,11 @@ namespace GUI
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
+            if (txt_MaLoaiSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn loại sách cần sửa.");
+                return;
+            }
             btn_Them.Enabled = true;
             btn_Sua.Enabled = false;
             OpenText();
@@ -132,11 +139,7 @@ namespace GUI
             }
             if(btn_Sua.Enabled == false)
             {
-                if(txt_MaLoaiSach.Text == "")
-                {
-                    MessageBox.Show("Vui lòng chọn loại sách cần sửa.");
-                    return;
-                }
+                
                 LoaiSach loaiSach = new LoaiSach()
                 { 
                     MaLoaiSach = txt_MaLoaiSach.Text,
@@ -187,6 +190,12 @@ namespace GUI
                         return;
                 }
             }
+        }
+
+        private void txt_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string keyWord = txt_TimKiem.Text;
+            dgv_LoaiSach.DataSource = loaiSachBLL.SearchLoaiSach(keyWord).Tables[0];
         }
     }
 }
