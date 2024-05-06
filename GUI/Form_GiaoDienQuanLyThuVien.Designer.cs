@@ -364,6 +364,7 @@
             this.btn_DocGia.Size = new System.Drawing.Size(192, 144);
             this.btn_DocGia.TabIndex = 40;
             this.btn_DocGia.UseVisualStyleBackColor = true;
+            this.btn_DocGia.Click += new System.EventHandler(this.btn_DocGia_Click);
             // 
             // Form_GiaoDienQuanLyThuVien
             // 

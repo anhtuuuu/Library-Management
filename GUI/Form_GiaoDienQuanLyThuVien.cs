@@ -55,7 +55,8 @@ namespace GUI
 
         private void btn_NhaCungCap_Click(object sender, EventArgs e)
         {
-            
+            Form_NhaCungCap form_NhaCungCap = new Form_NhaCungCap();
+            form_NhaCungCap.ShowDialog();
         }
 
         private void btn_ThongKeNhapSach_Click(object sender, EventArgs e)
@@ -73,6 +74,12 @@ namespace GUI
         private void btn_DangXuat_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btn_DocGia_Click(object sender, EventArgs e)
+        {
+            Form_QuanLyDocGia form_QuanLyDocGia = new Form_QuanLyDocGia();
+            form_QuanLyDocGia.ShowDialog();
         }
     }
 }

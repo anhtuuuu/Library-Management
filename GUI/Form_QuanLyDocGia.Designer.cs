@@ -60,9 +60,9 @@
             this.txt_TrangThai = new System.Windows.Forms.TextBox();
             this.lbl_TrangThai = new System.Windows.Forms.Label();
             this.dtp_NgayTao = new System.Windows.Forms.DateTimePicker();
-            this.library_managementDataSet5 = new GUI.Library_managementDataSet5();
+            this.qL_ThuVienDataSet3 = new GUI.QL_ThuVienDataSet3();
             this.docGiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.docGiaTableAdapter = new GUI.Library_managementDataSet5TableAdapters.DocGiaTableAdapter();
+            this.docGiaTableAdapter = new GUI.QL_ThuVienDataSet3TableAdapters.DocGiaTableAdapter();
             this.maDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +72,7 @@
             this.trangThaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DocGia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.library_managementDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.docGiaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -464,15 +464,15 @@
             this.dtp_NgayTao.TabIndex = 179;
             this.dtp_NgayTao.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
-            // library_managementDataSet5
+            // qL_ThuVienDataSet3
             // 
-            this.library_managementDataSet5.DataSetName = "Library_managementDataSet5";
-            this.library_managementDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.qL_ThuVienDataSet3.DataSetName = "QL_ThuVienDataSet3";
+            this.qL_ThuVienDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // docGiaBindingSource
             // 
             this.docGiaBindingSource.DataMember = "DocGia";
-            this.docGiaBindingSource.DataSource = this.library_managementDataSet5;
+            this.docGiaBindingSource.DataSource = this.qL_ThuVienDataSet3;
             // 
             // docGiaTableAdapter
             // 
@@ -573,7 +573,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DocGia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.library_managementDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_ThuVienDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.docGiaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -583,14 +583,10 @@
         #endregion
         private System.Windows.Forms.TextBox txt_MaDocGia;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_Xoa;
-        private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.Button btn_Thoat;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_Sua;
         private System.Windows.Forms.Button btn_LamMoi;
         private System.Windows.Forms.Button btn_CapNhat;
@@ -611,9 +607,13 @@
         private System.Windows.Forms.TextBox txt_TrangThai;
         private System.Windows.Forms.Label lbl_TrangThai;
         private System.Windows.Forms.DateTimePicker dtp_NgayTao;
-        private Library_managementDataSet5 library_managementDataSet5;
+        private System.Windows.Forms.Button btn_Xoa;
+        private System.Windows.Forms.Button btn_Them;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private QL_ThuVienDataSet3 qL_ThuVienDataSet3;
         private System.Windows.Forms.BindingSource docGiaBindingSource;
-        private Library_managementDataSet5TableAdapters.DocGiaTableAdapter docGiaTableAdapter;
+        private QL_ThuVienDataSet3TableAdapters.DocGiaTableAdapter docGiaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn maDGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenDGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;

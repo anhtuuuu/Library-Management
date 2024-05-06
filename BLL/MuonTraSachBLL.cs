@@ -1,0 +1,46 @@
+﻿using DAL;
+using DTO;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BLL
+{
+    public class MuonTraSachBLL
+    {
+        MuonTraSachDAL muonTraSachDAL = new MuonTraSachDAL();
+        public List<HoaDon> GetListHD()
+        {
+            return muonTraSachDAL.GetListHD();
+        }
+        public DataSet GetHD()
+        {
+            return muonTraSachDAL.GetHD();
+        }
+        public DataSet GetHD(string id)
+        {
+            return muonTraSachDAL.GetHD(id);
+        }
+
+        public DataSet GetDG()
+        {
+            return muonTraSachDAL.GetDG();
+        }
+
+        public DataSet GetDG(string id)
+        {
+            return muonTraSachDAL.GetDG(id);
+        }
+        public DataSet GetSach()
+        {
+            return muonTraSachDAL.GetSach();
+        }
+        public DataSet GetSach(string name)
+        {
+            return muonTraSachDAL.GetSach(name);
+        }
+    }
+}

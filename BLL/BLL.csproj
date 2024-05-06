@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHoaDonBLL.cs" />
     <Compile Include="DocGiaBLL.cs" />
+    <Compile Include="HoaDonBLL.cs" />
     <Compile Include="LoaiSachBLL.cs" />
+    <Compile Include="MuonTraSachBLL.cs" />
+    <Compile Include="NhaCungCapBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SachBLL.cs" />
     <Compile Include="TaiKhoanBLL.cs" />

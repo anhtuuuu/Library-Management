@@ -23,6 +23,8 @@ namespace GUI
         {
             // TODO: This line of code loads data into the 'qL_ThuVienDataSet.TaiKhoan' table. You can move, or remove it, as needed.
             this.taiKhoanTableAdapter.Fill(this.qL_ThuVienDataSet.TaiKhoan);
+            // TODO: This line of code loads data into the 'qL_ThuVienDataSet.TaiKhoan' table. You can move, or remove it, as needed.
+            //this.taiKhoanTableAdapter.Fill(this.qL_ThuVienDataSet.TaiKhoan);
 
             TaiKhoanBLL taiKhoanBLL = new TaiKhoanBLL();
             List<TaiKhoan> lstTaiKhoan = taiKhoanBLL.GetListTaiKhoan();

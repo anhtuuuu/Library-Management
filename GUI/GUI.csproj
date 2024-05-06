@@ -82,6 +82,12 @@
     <Compile Include="Form_MuonTraSach.Designer.cs">
       <DependentUpon>Form_MuonTraSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_NhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NhaCungCap.Designer.cs">
+      <DependentUpon>Form_NhaCungCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_NhapSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,36 +136,6 @@
     <Compile Include="Form_ThongKeNhapSach.Designer.cs">
       <DependentUpon>Form_ThongKeNhapSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="Library_managementDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Library_managementDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Library_managementDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Library_managementDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Library_managementDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Library_managementDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Library_managementDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Library_managementDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Library_managementDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Library_managementDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Library_managementDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Library_managementDataSet5.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QL_ThuVienDataSet.Designer.cs">
@@ -192,11 +168,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_ThuVienDataSet5.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QL_ThuVienDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
-    </Compile>
     <Compile Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -219,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_MuonTraSach.resx">
       <DependentUpon>Form_MuonTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NhaCungCap.resx">
+      <DependentUpon>Form_NhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_NhapSach.resx">
       <DependentUpon>Form_NhapSach.cs</DependentUpon>
@@ -254,72 +228,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Library_managementDataSet.xsc">
-      <DependentUpon>Library_managementDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Library_managementDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Library_managementDataSet.xss">
-      <DependentUpon>Library_managementDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet1.xsc">
-      <DependentUpon>Library_managementDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Library_managementDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Library_managementDataSet1.xss">
-      <DependentUpon>Library_managementDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet2.xsc">
-      <DependentUpon>Library_managementDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Library_managementDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Library_managementDataSet2.xss">
-      <DependentUpon>Library_managementDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet3.xsc">
-      <DependentUpon>Library_managementDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Library_managementDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Library_managementDataSet3.xss">
-      <DependentUpon>Library_managementDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet4.xsc">
-      <DependentUpon>Library_managementDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Library_managementDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Library_managementDataSet4.xss">
-      <DependentUpon>Library_managementDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet5.xsc">
-      <DependentUpon>Library_managementDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="Library_managementDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Library_managementDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Library_managementDataSet5.xss">
-      <DependentUpon>Library_managementDataSet5.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -394,17 +302,6 @@
     </None>
     <None Include="QL_ThuVienDataSet5.xss">
       <DependentUpon>QL_ThuVienDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="QL_ThuVienDataSet6.xsc">
-      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="QL_ThuVienDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QL_ThuVienDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QL_ThuVienDataSet6.xss">
-      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
     </None>
     <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsc">
       <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>

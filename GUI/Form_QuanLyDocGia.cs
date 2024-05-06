@@ -22,8 +22,10 @@ namespace GUI
 
         private void Form_QuanLyDocGia_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qL_ThuVienDataSet3.DocGia' table. You can move, or remove it, as needed.
+            this.docGiaTableAdapter.Fill(this.qL_ThuVienDataSet3.DocGia);
             // TODO: This line of code loads data into the 'library_managementDataSet5.DocGia' table. You can move, or remove it, as needed.
-            this.docGiaTableAdapter.Fill(this.library_managementDataSet5.DocGia);            
+            //this.docGiaTableAdapter.Fill(this.library_managementDataSet5.DocGia);            
         }
 
         private void dgv_DocGia_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -161,7 +163,7 @@ namespace GUI
                     DiaChi = txt_DiaChi.Text,
                     Email = txt_Email.Text,
                     Sdt = txt_SDT.Text,
-                    NgayTao = dtp_NgayTao.Value
+                    NgayTao = dtp_NgayTao.Value.ToString("yyyy/MM/dd")
                 };
                 string result = docGiaBLL.ThemDocGia(docGia);
 
@@ -197,7 +199,7 @@ namespace GUI
                     DiaChi = txt_DiaChi.Text,
                     Email = txt_Email.Text,
                     Sdt = txt_SDT.Text,
-                    NgayTao = dtp_NgayTao.Value
+                    NgayTao = dtp_NgayTao.Value.ToString("yyyy/MM/dd")
                 };
 
                 string result = docGiaBLL.SuaDocGia(docGia);

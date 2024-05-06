@@ -13,7 +13,7 @@ namespace DTO
         private string diaChi;
         private string email;
         private string sdt;
-        private DateTime ngayTao;
+        private string ngayTao;
         private int trangThai;
 
         public DocGia()
@@ -23,11 +23,11 @@ namespace DTO
             this.diaChi = "";
             this.email = "";
             this.sdt = "";
-            this.ngayTao = DateTime.Now;
+            this.ngayTao = "";
             this.trangThai = 0;
         }
 
-        public DocGia(string maDG, string tenDG, string diaChi, string email, string sdt, DateTime ngayTao, int trangThai)
+        public DocGia(string maDG, string tenDG, string diaChi, string email, string sdt, string ngayTao, int trangThai)
         {
             this.maDG = maDG;
             this.tenDG = tenDG;
@@ -43,7 +43,7 @@ namespace DTO
         public string DiaChi { get => diaChi; set => diaChi = value; }
         public string Email { get => email; set => email = value; }
         public string Sdt { get => sdt; set => sdt = value; }
-        public DateTime NgayTao { get => ngayTao; set => ngayTao = value; }
+        public string NgayTao { get => ngayTao; set => ngayTao = value; }
 
         public int TrangThai { get => trangThai; set => trangThai = value; }
     }

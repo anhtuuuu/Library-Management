@@ -23,8 +23,10 @@ namespace GUI
 
         private void Form_QuanLySach_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qL_ThuVienDataSet1.Sach' table. You can move, or remove it, as needed.
+            this.sachTableAdapter.Fill(this.qL_ThuVienDataSet1.Sach);
             // TODO: This line of code loads data into the 'library_managementDataSet2.Sach' table. You can move, or remove it, as needed.
-            this.sachTableAdapter.Fill(this.library_managementDataSet2.Sach);
+
 
             DataSet ls = sachBLL.GetLoaiSach();
             for (int i = 0; i < ls.Tables[0].Rows.Count; i++)

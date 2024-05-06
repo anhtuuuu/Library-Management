@@ -10,39 +10,51 @@ namespace DTO
     {
         private string maHD;
         private string maDG;
-        private DateTime ngayLap;
-        private DateTime hanTra;
+        private string ngayLap;
+        private string hanTra;
+        private string ngayTra;
+        private int soLuong;
         private int tienKhachDua;
         private int tienGuiKhach;
         private int thanhTien;
+        private int trangThai;
         public HoaDon() 
         {
-            this.maHD = "";
-            this.maDG = "";
-            this.ngayLap = DateTime.Now;
-            this.hanTra = DateTime.Now;
-            this.tienKhachDua = 0;
-            this.tienGuiKhach = 0;
-            this.thanhTien = 0;
+            this.MaHD = "";
+            this.MaDG = "";
+            this.NgayLap = "";
+            this.HanTra = "";
+            this.NgayTra = "";
+            this.SoLuong = 0;
+            this.TienKhachDua = 0;
+            this.TienGuiKhach = 0;
+            this.ThanhTien = 0;
+            this.TrangThai = 0;
         }
 
-        public HoaDon(string maHD, string maDG, DateTime ngayLap, DateTime hanTra, int tienKhachDua, int tienGuiKhach, int thanhTien)
+        public HoaDon(string maHD, string maDG, string ngayLap, string hanTra, string ngayTra, int soLuong, int tienKhachDua, int tienGuiKhach, int thanhTien, int trangThai)
         {
-            this.maHD = maHD;
-            this.maDG = maDG;
-            this.ngayLap = ngayLap;
-            this.hanTra = hanTra;
-            this.tienKhachDua = tienKhachDua;
-            this.tienGuiKhach = tienGuiKhach;
-            this.thanhTien = thanhTien;
+            this.MaHD = maHD;
+            this.MaDG = maDG;
+            this.NgayLap = ngayLap;
+            this.HanTra = hanTra;
+            this.NgayTra = ngayTra;
+            this.SoLuong = soLuong;
+            this.TienKhachDua = tienKhachDua;
+            this.TienGuiKhach = tienGuiKhach;
+            this.ThanhTien = thanhTien;
+            this.TrangThai = trangThai;
         }
 
         public string MaHD { get => maHD; set => maHD = value; }
         public string MaDG { get => maDG; set => maDG = value; }
-        public DateTime NgayLap { get => ngayLap; set => ngayLap = value; }
-        public DateTime HanTra { get => hanTra; set => hanTra = value; }
+        public string NgayLap { get => ngayLap; set => ngayLap = value; }
+        public string HanTra { get => hanTra; set => hanTra = value; }
+        public string NgayTra { get => ngayTra; set => ngayTra = value; }
+        public int SoLuong { get => soLuong; set => soLuong = value; }
         public int TienKhachDua { get => tienKhachDua; set => tienKhachDua = value; }
         public int TienGuiKhach { get => tienGuiKhach; set => tienGuiKhach = value; }
         public int ThanhTien { get => thanhTien; set => thanhTien = value; }
+        public int TrangThai { get => trangThai; set => trangThai = value; }
     }
 }

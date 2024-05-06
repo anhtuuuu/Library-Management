@@ -35,7 +35,7 @@ namespace DAL
                     if (!reader.IsDBNull(4))
                         docGia.Sdt = reader.GetString(4);
                     if (!reader.IsDBNull(5))
-                        docGia.NgayTao = reader.GetDateTime(5);
+                        docGia.NgayTao = reader.GetString(5);
                     if (!reader.IsDBNull(6))
                         docGia.TrangThai = reader.GetInt32(6);
                     docGias.Add(docGia);

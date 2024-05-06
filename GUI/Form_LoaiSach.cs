@@ -22,8 +22,10 @@ namespace GUI
 
         private void Form_LoaiSach_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qL_ThuVienDataSet2.LoaiSach' table. You can move, or remove it, as needed.
+            this.loaiSachTableAdapter.Fill(this.qL_ThuVienDataSet2.LoaiSach);
             // TODO: This line of code loads data into the 'library_managementDataSet3.LoaiSach' table. You can move, or remove it, as needed.
-            this.loaiSachTableAdapter1.Fill(this.library_managementDataSet3.LoaiSach);
+            //this.loaiSachTableAdapter1.Fill(this.library_managementDataSet3.LoaiSach);
             // TODO: This line of code loads data into the 'qL_ThuVienDataSet5.LoaiSach' table. You can move, or remove it, as needed.
             //this.loaiSachTableAdapter.Fill(this.qL_ThuVienDataSet5.LoaiSach);
 
