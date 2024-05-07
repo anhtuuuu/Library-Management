@@ -14,9 +14,9 @@ namespace DTO
         private string hanTra;
         private string ngayTra;
         private int soLuong;
-        private int tienKhachDua;
-        private int tienGuiKhach;
-        private int thanhTien;
+        private Decimal tienKhachDua;
+        private Decimal tienGuiKhach;
+        private Decimal thanhTien;
         private int trangThai;
         public HoaDon() 
         {
@@ -32,7 +32,7 @@ namespace DTO
             this.TrangThai = 0;
         }
 
-        public HoaDon(string maHD, string maDG, string ngayLap, string hanTra, string ngayTra, int soLuong, int tienKhachDua, int tienGuiKhach, int thanhTien, int trangThai)
+        public HoaDon(string maHD, string maDG, string ngayLap, string hanTra, string ngayTra, int soLuong, Decimal tienKhachDua, Decimal tienGuiKhach, Decimal thanhTien, int trangThai)
         {
             this.MaHD = maHD;
             this.MaDG = maDG;
@@ -52,9 +52,9 @@ namespace DTO
         public string HanTra { get => hanTra; set => hanTra = value; }
         public string NgayTra { get => ngayTra; set => ngayTra = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
-        public int TienKhachDua { get => tienKhachDua; set => tienKhachDua = value; }
-        public int TienGuiKhach { get => tienGuiKhach; set => tienGuiKhach = value; }
-        public int ThanhTien { get => thanhTien; set => thanhTien = value; }
+        public Decimal TienKhachDua { get => tienKhachDua; set => tienKhachDua = value; }
+        public Decimal TienGuiKhach { get => tienGuiKhach; set => tienGuiKhach = value; }
+        public Decimal ThanhTien { get => thanhTien; set => thanhTien = value; }
         public int TrangThai { get => trangThai; set => trangThai = value; }
     }
 }

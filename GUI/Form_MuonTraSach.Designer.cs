@@ -52,12 +52,12 @@
             this.lbl_TenDG = new System.Windows.Forms.Label();
             this.grp_TrangThai = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btn_InHoaDon = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_LamMoi = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btn_InHoaDon = new System.Windows.Forms.Button();
             this.btn_Muon = new System.Windows.Forms.Button();
             this.btn_Tra = new System.Windows.Forms.Button();
             this.num_TienKhachDua = new System.Windows.Forms.NumericUpDown();
@@ -307,6 +307,32 @@
             this.groupBox2.TabIndex = 242;
             this.groupBox2.TabStop = false;
             // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 9.25F);
+            this.label14.Location = new System.Drawing.Point(1, 202);
+            this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 19);
+            this.label14.TabIndex = 218;
+            this.label14.Text = "In hóa đơn";
+            // 
+            // btn_InHoaDon
+            // 
+            this.btn_InHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_InHoaDon.ImageIndex = 9;
+            this.btn_InHoaDon.ImageList = this.imgHinhAnh;
+            this.btn_InHoaDon.Location = new System.Drawing.Point(11, 165);
+            this.btn_InHoaDon.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_InHoaDon.MaximumSize = new System.Drawing.Size(50, 34);
+            this.btn_InHoaDon.MinimumSize = new System.Drawing.Size(50, 34);
+            this.btn_InHoaDon.Name = "btn_InHoaDon";
+            this.btn_InHoaDon.Size = new System.Drawing.Size(50, 34);
+            this.btn_InHoaDon.TabIndex = 217;
+            this.btn_InHoaDon.UseVisualStyleBackColor = true;
+            // 
             // btn_Thoat
             // 
             this.btn_Thoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -361,32 +387,6 @@
             this.btn_LamMoi.UseVisualStyleBackColor = true;
             this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 9.25F);
-            this.label14.Location = new System.Drawing.Point(1, 202);
-            this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(74, 19);
-            this.label14.TabIndex = 218;
-            this.label14.Text = "In hóa đơn";
-            // 
-            // btn_InHoaDon
-            // 
-            this.btn_InHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_InHoaDon.ImageIndex = 9;
-            this.btn_InHoaDon.ImageList = this.imgHinhAnh;
-            this.btn_InHoaDon.Location = new System.Drawing.Point(11, 165);
-            this.btn_InHoaDon.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.btn_InHoaDon.MaximumSize = new System.Drawing.Size(50, 34);
-            this.btn_InHoaDon.MinimumSize = new System.Drawing.Size(50, 34);
-            this.btn_InHoaDon.Name = "btn_InHoaDon";
-            this.btn_InHoaDon.Size = new System.Drawing.Size(50, 34);
-            this.btn_InHoaDon.TabIndex = 217;
-            this.btn_InHoaDon.UseVisualStyleBackColor = true;
-            // 
             // btn_Muon
             // 
             this.btn_Muon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -397,6 +397,7 @@
             this.btn_Muon.TabIndex = 243;
             this.btn_Muon.Text = "Mượn";
             this.btn_Muon.UseVisualStyleBackColor = false;
+            this.btn_Muon.Click += new System.EventHandler(this.btn_Muon_Click);
             // 
             // btn_Tra
             // 
@@ -408,6 +409,7 @@
             this.btn_Tra.TabIndex = 244;
             this.btn_Tra.Text = "Trả";
             this.btn_Tra.UseVisualStyleBackColor = false;
+            this.btn_Tra.Click += new System.EventHandler(this.btn_Tra_Click);
             // 
             // num_TienKhachDua
             // 

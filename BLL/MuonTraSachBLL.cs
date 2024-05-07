@@ -42,5 +42,23 @@ namespace BLL
         {
             return muonTraSachDAL.GetSach(name);
         }
+        public string InsertHoaDon(HoaDon hoaDon)
+        {
+            if (hoaDon.MaHD == "")
+                return "Required_ID";
+            return muonTraSachDAL.InsertHoaDon(hoaDon);
+        }
+        public string InsertChitietHoaDon(ChiTietHoaDon cthd)
+        {
+            if (cthd.MaHD == "")
+                return "Required_IDHD";
+            if (cthd.MaSach == "")
+                return "Required_IDSach";
+            return muonTraSachDAL.InsertChitietHoaDon(cthd);
+        }
+        public string TraSach(string maHD)
+        {
+            return muonTraSachDAL.TraSach(maHD);
+        }
     }
 }

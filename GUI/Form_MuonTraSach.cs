@@ -16,7 +16,10 @@ namespace GUI
     {
         private MuonTraSachBLL MuonTra = new MuonTraSachBLL();
         private Decimal tongTien = 0;
-        private int count = 0;
+        private int soLuong = 0;
+        private string maHD = "";
+        private List<ChiTietHoaDon> chiTietHoaDons = new List<ChiTietHoaDon>();
+
         public Form_MuonTraSach()
         {
             InitializeComponent();
@@ -24,8 +27,17 @@ namespace GUI
 
         private void Form_MuonTraSach_Load(object sender, EventArgs e)
         {
+            int count = MuonTra.GetListHD().Count + 1;
+            if (count < 10)
+                maHD = "HD00" + count.ToString();
+            else if (count >= 10 && count < 100)
+                maHD = "HD0" + count.ToString();
+            else
+                maHD = "HD" + count.ToString();
+
+
             dtp_NgayMuon.Value = DateTime.Now;
-            dtp_HanTra.Value = DateTime.Now.AddDays(30);
+            dtp_HanTra.Value = dtp_NgayMuon.Value.AddDays(30);
             DataSet docGia = MuonTra.GetDG();
             for (int i = 0; i < docGia.Tables[0].Rows.Count; i++)
             {
@@ -100,15 +112,40 @@ namespace GUI
 
             if (e.CurrentValue.ToString() == "Unchecked")
             {
-                count += 1;
+                soLuong += 1;
                 tongTien +=  Decimal.Parse(sach.Tables[0].Rows[0][6].ToString());
                 txt_ThanhTien.Text = tongTien.ToString();
+
+                ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon()
+                {
+                    MaHD = maHD,
+                    MaSach = sach.Tables[0].Rows[0][0].ToString(),
+                    SoLuong = 1,
+                    DonGia = Decimal.Parse(sach.Tables[0].Rows[0][6].ToString()),
+                    ThanhTien = Decimal.Parse(sach.Tables[0].Rows[0][6].ToString())
+                };
+
+                chiTietHoaDons.Add(chiTietHoaDon);
             }
             else
             {
-                count -= 1;
+                soLuong -= 1;
                 tongTien -= Decimal.Parse(sach.Tables[0].Rows[0][6].ToString());
                 txt_ThanhTien.Text = tongTien.ToString();
+                string maSach = sach.Tables[0].Rows[0][0].ToString();
+                try
+                {                    
+                    int index = chiTietHoaDons.FindIndex(delegate (ChiTietHoaDon cthd)
+                        {
+                            return (cthd.MaHD.Equals(maHD) && cthd.MaSach.Equals(maSach));
+                        });
+                    //MessageBox.Show(index.ToString());
+                    chiTietHoaDons.RemoveAt(index);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
         }
@@ -123,6 +160,103 @@ namespace GUI
                 return;
             }
             txt_TienGuiKhach.Text = tienGuiKhach.ToString();
+        }
+
+        private void btn_Muon_Click(object sender, EventArgs e)
+        {
+            if(maHD == "")
+            {
+                return;
+            }
+            if (cbo_MaDG.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng chọn độc giả.");
+                return;
+            }
+            if (num_TienKhachDua.Value == 0)
+            {
+                MessageBox.Show("Vui lòng nhập số tiền khách đã đưa.");
+                return;
+            }
+            if (txt_TienGuiKhach.Text.Trim() == "")
+            {
+                MessageBox.Show("Chú ý tiền gửi khách.");
+                return;
+            }
+            DialogResult dialog = MessageBox.Show("Xác nhận mượn?", "Xác nhận", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.No) return;
+            HoaDon hoaDon = new HoaDon()
+            {
+                MaHD = maHD,
+                MaDG = cbo_MaDG.Text,
+                NgayLap = dtp_NgayMuon.Text,
+                HanTra = dtp_HanTra.Text,
+                NgayTra = null,
+                SoLuong = soLuong,
+                TienKhachDua = num_TienKhachDua.Value,
+                TienGuiKhach = Decimal.Parse(txt_TienGuiKhach.Text),
+                ThanhTien = Decimal.Parse(txt_ThanhTien.Text),
+                TrangThai = 1
+            };
+            string resultInsHD = MuonTra.InsertHoaDon(hoaDon);
+            switch (resultInsHD)
+            {
+                case "Required_ID":
+                    MessageBox.Show("Mã hóa đơn rỗng.");
+                    return;
+                case "Successful_Change":                    
+                    foreach (ChiTietHoaDon item in chiTietHoaDons)
+                    {
+                        string resultInsCTHD = MuonTra.InsertChitietHoaDon(item);
+                        switch (resultInsCTHD)
+                        {
+                            case "Required_IDHD":
+                                MessageBox.Show("Mã hóa đơn rỗng.");
+                                return;
+                            case "Required_IDSach":
+                                MessageBox.Show("Mã sách rỗng.");
+                                return;
+                            case "Successful_Change":                                
+                                break;
+                            default:
+                                MessageBox.Show(resultInsCTHD);
+                                return;
+                        }
+                    }
+                    MessageBox.Show("Lập hóa đơn thành công.");
+                    return;
+                default:
+                    MessageBox.Show(resultInsHD);
+                    return;
+            }
+
+            
+
+        }
+
+        private void btn_Tra_Click(object sender, EventArgs e)
+        {
+            if(cbo_MaHD.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng chọn mã đọc giả.");
+                return;
+            }
+
+            DialogResult dialog = MessageBox.Show("Xác nhận trả sách?", "Xác nhận", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.No) return;
+
+            string mhd = cbo_MaHD.Text.Trim();
+            string resultTra = MuonTra.TraSach(mhd);
+            switch (resultTra)
+            {
+                case "Successful_Change":
+                    MessageBox.Show("Trả sách thành công.");
+                    btn_LamMoi_Click(sender,e);
+                    return;
+                default:
+                    MessageBox.Show(resultTra);
+                    return;
+            }
         }
     }
 }

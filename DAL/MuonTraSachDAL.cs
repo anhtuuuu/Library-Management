@@ -75,6 +75,46 @@ namespace DAL
                 throw new Exception(ex.Message);
             }
         }
+        public string InsertHoaDon(HoaDon hoaDon)
+        {
+            string query = "INSERT INTO HoaDon VALUES('" + hoaDon.MaHD + "','" + hoaDon.MaDG + "','" + hoaDon.NgayLap + "','" + hoaDon.HanTra + "','" + hoaDon.NgayLap + "'," + hoaDon.SoLuong + "," + hoaDon.TienKhachDua + "," + hoaDon.TienGuiKhach + "," + hoaDon.ThanhTien + "," + hoaDon.TrangThai + ")";
+            try
+            {
+                Command(query);
+                return "Successful_Change";
+            }
+            catch (Exception ex)
+            {
+                return "Fail_Change " + ex.Message;
+            }
+        }
+        public string InsertChitietHoaDon(ChiTietHoaDon cthd)
+        {
+            string query = "INSERT INTO ChiTietHoaDon VALUES('" + cthd.MaHD + "','" + cthd.MaSach +"'," + cthd.SoLuong + "," + cthd.DonGia + "," + cthd.ThanhTien + ")";
+            try
+            {
+                Command(query);
+                return "Successful_Change";
+            }
+            catch (Exception ex)
+            {
+                return "Fail_Change " + ex.Message;
+            }
+        }
+
+        public string TraSach(string maHD)
+        {
+            string query = "UPDATE HoaDon SET TrangThai = 0 WHERE MaHD = '" + maHD + "' ";
+            try
+            {
+                Command(query);
+                return "Successful_Change";
+            }
+            catch (Exception ex)
+            {
+                return "Fail_Change " + ex.Message;
+            }
+        }
 
     }
 }

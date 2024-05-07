@@ -29,19 +29,19 @@ namespace DAL
                     if (!reader.IsDBNull(1))
                         hoaDon.MaDG = reader.GetString(1);
                     if (!reader.IsDBNull(2))
-                        hoaDon.NgayLap = reader.GetString(2);
+                        hoaDon.NgayLap = reader.GetDateTime(2).ToString();
                     if (!reader.IsDBNull(3))
-                        hoaDon.HanTra = reader.GetString(3);
+                        hoaDon.HanTra = reader.GetDateTime(3).ToString();
                     if (!reader.IsDBNull(4))
-                        hoaDon.NgayTra = reader.GetString(4);
+                        hoaDon.NgayTra = reader.GetDateTime(4).ToString();
                     if (!reader.IsDBNull(5))
                         hoaDon.SoLuong = reader.GetInt32(5);
                     if (!reader.IsDBNull(6))
-                        hoaDon.TienKhachDua = reader.GetInt32(6);
+                        hoaDon.TienKhachDua = reader.GetDecimal(6);
                     if (!reader.IsDBNull(7))
-                        hoaDon.TienGuiKhach = reader.GetInt32(7);
+                        hoaDon.TienGuiKhach = reader.GetDecimal(7);
                     if (!reader.IsDBNull(8))
-                        hoaDon.ThanhTien = reader.GetInt32(8);
+                        hoaDon.ThanhTien = reader.GetDecimal(8);
                     if (!reader.IsDBNull(9))
                         hoaDon.TrangThai = reader.GetInt32(9);
                     hoaDons.Add(hoaDon);
