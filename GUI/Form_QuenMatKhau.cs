@@ -93,5 +93,10 @@ namespace GUI
                 timer_Counter.Stop();
             }
         }
+
+        private void link_DangNhap_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -49,8 +49,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sach.cs" />
     <Compile Include="TaiKhoan.cs" />
-    <Compile Include="ThongKeMuonSach.cs" />
-    <Compile Include="ThongKeNhapSach.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

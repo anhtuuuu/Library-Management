@@ -37,7 +37,7 @@ namespace GUI
             txt_DiaChi.Text = data.Cells[2].Value.ToString();
             txt_Email.Text = data.Cells[3].Value.ToString();
             txt_SDT.Text = data.Cells[4].Value.ToString();
-            dtp_NgayTao.Value = DateTime.Parse(data.Cells[5].Value.ToString());
+            dtp_NgayTao.Text = data.Cells[5].Value.ToString();
             txt_TrangThai.Text = (data.Cells[6].Value.ToString() == "1" ? "Hoạt động" : "Đã xóa");
         }
 
@@ -53,7 +53,7 @@ namespace GUI
             txt_DiaChi.Text = string.Empty;
             txt_Email.Text = string.Empty;
             txt_SDT.Text = string.Empty;
-            dtp_NgayTao.Value = DateTime.Now;
+            dtp_NgayTao.Text = DateTime.Now.ToString();
             txt_TrangThai.Text = string.Empty;
         }
 
@@ -93,7 +93,7 @@ namespace GUI
             Refresh();
             OpenText();
             btn_CapNhat.Enabled = true;
-            dtp_NgayTao.Value = DateTime.Now;
+            dtp_NgayTao.Text = DateTime.Now.ToString();
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

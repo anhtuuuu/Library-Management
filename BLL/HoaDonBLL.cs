@@ -38,5 +38,13 @@ namespace BLL
             return hoaDonDAL.GetDocGia();
 
         }
+        public string DeleteHoaDon(string maHD)
+        {
+            return hoaDonDAL.DeleteHoaDon(maHD);
+        }
+        public string DeleteChiTietHoaDon(string maHD)
+        {
+            return hoaDonDAL.DeleteChiTietHoaDon(maHD);
+        }
     }
 }

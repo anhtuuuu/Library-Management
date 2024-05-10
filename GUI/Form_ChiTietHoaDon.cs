@@ -25,5 +25,10 @@ namespace GUI
             hd = hoaDon;
             dgv_ChiTietHoaDon.DataSource = CTHD.GetCTHD(hd).Tables[0];
         }
+
+        private void btn_Thoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

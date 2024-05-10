@@ -108,5 +108,32 @@ namespace DAL
             DataSet result = Search(query);
             return result;
         }
+
+        public string DeleteHoaDon(string maHD)
+        {
+            string query = "UPDATE HoaDon SET SoLuong = 0, TienKhachDua = 0, TienGuiKhach = 0, ThanhTien = 0, TrangThai = 0 WHERE MaHD = '" + maHD + "'";
+            try
+            {
+                Command(query);
+                return "Successful_Change";
+            }
+            catch (Exception ex)
+            {
+                return "Fail_Change " + ex.Message;
+            }
+        }
+        public string DeleteChiTietHoaDon(string maHD)
+        {
+            string query = "DELETE ChiTietHoaDon WHERE MaHD ='" + maHD + "'";
+            try
+            {
+                Command(query);
+                return "Successful_Change";
+            }
+            catch (Exception ex)
+            {
+                return "Fail_Change " + ex.Message;
+            }
+        }
     }
 }

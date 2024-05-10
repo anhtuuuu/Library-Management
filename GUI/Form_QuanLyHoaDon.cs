@@ -64,15 +64,13 @@ namespace GUI
             num_SoLuong.ReadOnly = true;
             num_TienKhachDua.ReadOnly = true;
             num_TienGuiKhach.ReadOnly = true;
-            btn_CapNhat.Enabled = false;
             clb_SachDaMuon.Enabled = false;
 
         }
 
         private void btn_LamMoi_Click(object sender, EventArgs e)
         {            
-            btn_Sua.Enabled = true;
-            btn_CapNhat.Enabled = false;           
+            btn_Xoa.Enabled = true;
             CloseText();
             Refresh();
         }
@@ -80,25 +78,6 @@ namespace GUI
         private void btn_Thoat_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-
-        private void btn_Sua_Click(object sender, EventArgs e)
-        {
-            if (txt_MaHD.Text == "")
-            {
-                MessageBox.Show("Vui lòng chọn hóa đơn cần sửa.");
-                return;
-            }
-            DataSet docGia = hoaDonBLL.GetDocGia();
-
-            for (int i = 0; i < docGia.Tables[0].Rows.Count; i++)
-            {
-                cbo_MaDG.Items.Add(docGia.Tables[0].Rows[i][0].ToString());               
-            }
-            btn_Sua.Enabled = false;
-            OpenText();
-            btn_CapNhat.Enabled = true;
         }
 
         private void dgv_HoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -148,6 +127,45 @@ namespace GUI
             };
             Form_ChiTietHoaDon form_ChiTietHoaDon = new Form_ChiTietHoaDon(hoaDon);
             form_ChiTietHoaDon.ShowDialog();
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            if(txt_MaHD.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng chọn hóa đơn cần xóa");
+                return;
+            }
+
+            DialogResult dialog = MessageBox.Show("Xác nhận xóa hóa đơn?", "Thông báo", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.No)
+                return;
+            string resultDelHD = hoaDonBLL.DeleteHoaDon(txt_MaHD.Text.Trim());
+            switch (resultDelHD)
+            {
+                case "Successful_Change":
+                    string resultDelCTHD = hoaDonBLL.DeleteChiTietHoaDon(txt_MaHD.Text.Trim());
+                    switch (resultDelCTHD)
+                    {
+                        case "Successful_Change":
+                            MessageBox.Show("Xóa hóa đơn thành công.");
+                            Form_QuanLyHoaDon_Load(sender, e);
+                            return;
+                        default:
+                            MessageBox.Show(resultDelCTHD);
+                            return;
+                    }
+                default:
+                    MessageBox.Show(resultDelHD);
+                    return;
+            }
+
+        }
+
+        private void txt_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            DataSet data = hoaDonBLL.SearchHoaDon(txt_TimKiem.Text);
+            dgv_HoaDon.DataSource = data.Tables[0];
         }
     }
 }

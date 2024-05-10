@@ -19,8 +19,7 @@ namespace DTO
         private string maNhaCungCap;
         private int soLuong;
         private int trangThai;
-        private byte[] hinhAnh;
-        private float khuyenMai;
+        private string hinhAnh;
 
         public Sach()
         {
@@ -35,11 +34,10 @@ namespace DTO
             this.maNhaCungCap = "";
             this.soLuong = 0;
             this.trangThai = 0;
-            this.hinhAnh = null;
-            this.khuyenMai = 0;
+            this.hinhAnh = "";
         }
 
-        public Sach(string maSach, string maLoaiSach, string tenSach, string xuatXu, string tacGia, Decimal giaNhap, Decimal giaChoThue, string donViTinh, string maNhaCungCap, int soLuong, int trangThai, byte[] hinhAnh, float khuyenMai)
+        public Sach(string maSach, string maLoaiSach, string tenSach, string xuatXu, string tacGia, Decimal giaNhap, Decimal giaChoThue, string donViTinh, string maNhaCungCap, int soLuong, int trangThai, string hinhAnh)
         {
             this.maSach = maSach;
             this.maLoaiSach = maLoaiSach;
@@ -53,7 +51,6 @@ namespace DTO
             this.soLuong = soLuong;
             this.trangThai = trangThai;
             this.hinhAnh = hinhAnh;
-            this.khuyenMai = khuyenMai;
         }
 
         public string MaSach { get => maSach; set => maSach = value; }
@@ -67,7 +64,6 @@ namespace DTO
         public string MaNhaCungCap { get => maNhaCungCap; set => maNhaCungCap = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
         public int TrangThai { get => trangThai; set => trangThai = value; }
-        public byte[] HinhAnh { get => hinhAnh; set => hinhAnh = value; }
-        public float KhuyenMai { get => khuyenMai; set => khuyenMai = value; }
+        public string HinhAnh { get => hinhAnh; set => hinhAnh = value; }
     }
 }

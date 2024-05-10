@@ -92,7 +92,7 @@ namespace GUI
         {
             string id = cbo_MaHD.SelectedItem.ToString();
             DataSet muonTra = MuonTra.GetHD(id);
-            if(muonTra.Tables[0].Rows[0][9].ToString() == "1")
+            if (muonTra.Tables[0].Rows[0][9].ToString() == "1")
                 rad_ChuaTra.Checked = true;
             else
                 rad_DaTra.Checked = true;
@@ -236,6 +236,12 @@ namespace GUI
 
         private void btn_Tra_Click(object sender, EventArgs e)
         {
+            if (rad_DaTra.Checked)
+            {
+                MessageBox.Show("Hóa đơn này đã được trả.");
+                return;
+            }
+            string ngayTra = DateTime.Now.ToString();
             if(cbo_MaHD.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng chọn mã đọc giả.");
@@ -246,17 +252,30 @@ namespace GUI
             if (dialog == DialogResult.No) return;
 
             string mhd = cbo_MaHD.Text.Trim();
-            string resultTra = MuonTra.TraSach(mhd);
-            switch (resultTra)
+
+            HoaDon hoaDon = new HoaDon() 
             {
-                case "Successful_Change":
-                    MessageBox.Show("Trả sách thành công.");
-                    btn_LamMoi_Click(sender,e);
-                    return;
-                default:
-                    MessageBox.Show(resultTra);
-                    return;
+                MaHD = mhd
+            };
+
+            DataSet data = MuonTra.GetListCTHD(hoaDon);
+
+            for(int i = 0; i < data.Tables[0].Rows.Count; i++)
+            {
+                string resultTra = MuonTra.TraSach(mhd, ngayTra, int.Parse(data.Tables[0].Rows[i][2].ToString()), data.Tables[0].Rows[i][1].ToString());
+                switch (resultTra)
+                {
+                    case "Successful_Change":
+                        MessageBox.Show("Trả sách thành công.");
+                        btn_LamMoi_Click(sender, e);
+                        break;
+                    default:
+                        MessageBox.Show(resultTra);
+                        return;
+                }
             }
+
+            
         }
     }
 }

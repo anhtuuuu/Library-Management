@@ -40,12 +40,7 @@ namespace GUI
             Form_MuonTraSach form_MuonTraSach = new Form_MuonTraSach();
             form_MuonTraSach.ShowDialog(); 
         }
-
-        private void btn_NhapSach_Click(object sender, EventArgs e)
-        {
-            Form_NhapSach form_NhapSach = new Form_NhapSach();
-            form_NhapSach.ShowDialog();
-        }
+               
 
         private void btn_HoaDon_Click(object sender, EventArgs e)
         {
@@ -57,19 +52,7 @@ namespace GUI
         {
             Form_NhaCungCap form_NhaCungCap = new Form_NhaCungCap();
             form_NhaCungCap.ShowDialog();
-        }
-
-        private void btn_ThongKeNhapSach_Click(object sender, EventArgs e)
-        {
-            Form_ThongKeNhapSach form_ThongKeNhapSach = new Form_ThongKeNhapSach();
-            form_ThongKeNhapSach.ShowDialog();
-        }
-
-        private void btn_ThongKeMuonSach_Click(object sender, EventArgs e)
-        {
-            Form_ThongKeMuonSach form_ThongKeMuonSach = new Form_ThongKeMuonSach();
-            form_ThongKeMuonSach.ShowDialog();
-        }
+        }        
 
         private void btn_DangXuat_Click(object sender, EventArgs e)
         {
@@ -80,6 +63,12 @@ namespace GUI
         {
             Form_QuanLyDocGia form_QuanLyDocGia = new Form_QuanLyDocGia();
             form_QuanLyDocGia.ShowDialog();
+        }
+
+        private void btn_ThongKe_Click(object sender, EventArgs e)
+        {
+            Form_ThongKe form_ThongKe = new Form_ThongKe();
+            form_ThongKe.ShowDialog();
         }
     }
 }

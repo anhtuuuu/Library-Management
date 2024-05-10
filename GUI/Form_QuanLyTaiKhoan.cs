@@ -97,6 +97,13 @@ namespace GUI
 
         private void btn_LamMoi_Click(object sender, EventArgs e)
         {
+            txt_MaTK.Text = "";
+            txt_MatKhau.Text = "";
+            txt_HoTen.Text = "";
+            txt_SDT.Text = "";
+            txt_Email.Text = "";
+            txt_TenTK.Text = "";
+            chk_TrangThai.Checked = false;
             txt_TimKiem.Text = "";
             Form_QuanLyTaiKhoan_Load(sender, e);
         }

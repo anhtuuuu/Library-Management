@@ -74,5 +74,10 @@ namespace GUI
         {
             Close();
         }
+
+        private void lbl_XacNhanMK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -88,12 +88,6 @@
     <Compile Include="Form_NhaCungCap.Designer.cs">
       <DependentUpon>Form_NhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_NhapSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_NhapSach.Designer.cs">
-      <DependentUpon>Form_NhapSach.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_QuanLyDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,17 +118,11 @@
     <Compile Include="Form_QuenMatKhau.Designer.cs">
       <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_ThongKeMuonSach.cs">
+    <Compile Include="Form_ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ThongKeMuonSach.Designer.cs">
-      <DependentUpon>Form_ThongKeMuonSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_ThongKeNhapSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_ThongKeNhapSach.Designer.cs">
-      <DependentUpon>Form_ThongKeNhapSach.cs</DependentUpon>
+    <Compile Include="Form_ThongKe.Designer.cs">
+      <DependentUpon>Form_ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -168,6 +156,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_ThuVienDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QL_ThuVienDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -194,9 +192,6 @@
     <EmbeddedResource Include="Form_NhaCungCap.resx">
       <DependentUpon>Form_NhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_NhapSach.resx">
-      <DependentUpon>Form_NhapSach.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_QuanLyDocGia.resx">
       <DependentUpon>Form_QuanLyDocGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,11 +207,8 @@
     <EmbeddedResource Include="Form_QuenMatKhau.resx">
       <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_ThongKeMuonSach.resx">
-      <DependentUpon>Form_ThongKeMuonSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_ThongKeNhapSach.resx">
-      <DependentUpon>Form_ThongKeNhapSach.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ThongKe.resx">
+      <DependentUpon>Form_ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -303,6 +295,28 @@
     <None Include="QL_ThuVienDataSet5.xss">
       <DependentUpon>QL_ThuVienDataSet5.xsd</DependentUpon>
     </None>
+    <None Include="QL_ThuVienDataSet6.xsc">
+      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet6.xss">
+      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet7.xsc">
+      <DependentUpon>QL_ThuVienDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet7.xss">
+      <DependentUpon>QL_ThuVienDataSet7.xsd</DependentUpon>
+    </None>
     <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsc">
       <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>
     </None>
@@ -333,6 +347,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\173-1731325_person-icon-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Browny-Red-Border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34-asana-color-gradient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doanhthu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cach-ve-quyen-sach-13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-09 142141.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

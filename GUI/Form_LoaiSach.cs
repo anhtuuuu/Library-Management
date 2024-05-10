@@ -39,7 +39,7 @@ namespace GUI
             DataGridViewRow data = dgv_LoaiSach.Rows[index];
             txt_MaLoaiSach.Text = data.Cells[0].Value.ToString();
             txt_TenLoaiSach.Text = data.Cells[1].Value.ToString();
-            txt_TrangThai.Text = (data.Cells[2].Value.ToString() == "1"?"Hoạt động":"Đã xóa");
+            txt_Status.Text = (data.Cells[2].Value.ToString() == "1"?"Hoạt động":"Đã xóa");
         }
 
       
@@ -53,7 +53,7 @@ namespace GUI
         {
             txt_MaLoaiSach.Text = string.Empty;
             txt_TenLoaiSach.Text = string.Empty;
-            txt_TrangThai.Text = string.Empty;  
+            txt_Status.Text = string.Empty;  
             txt_TimKiem.Text = string.Empty;
         }
 

@@ -5,13 +5,10 @@ D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_DangNhap.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_GiaoDienQuanLyThuVien.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_LoaiSach.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_MuonTraSach.resources
-D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_NhapSach.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_QuanLyHoaDon.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_QuanLySach.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_QuanLyTaiKhoan.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_QuenMatKhau.resources
-D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_ThongKeMuonSach.resources
-D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_ThongKeNhapSach.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Properties.Resources.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
@@ -31,3 +28,4 @@ D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.exe
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.pdb
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_QuanLyDocGia.resources
 D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_NhaCungCap.resources
+D:\Project_CSharp\Library_Management\GUI\obj\Debug\GUI.Form_ThongKe.resources

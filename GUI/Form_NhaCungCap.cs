@@ -211,5 +211,11 @@ namespace GUI
                 }
             }
         }
+
+        private void txt_TimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string keyWord = txt_TimKiem.Text;
+            dgv_NhaCungCap.DataSource = nhaCungCapBLL.SearchNCC(keyWord).Tables[0];
+        }
     }
 }

@@ -56,9 +56,13 @@ namespace BLL
                 return "Required_IDSach";
             return muonTraSachDAL.InsertChitietHoaDon(cthd);
         }
-        public string TraSach(string maHD)
+        public string TraSach(string maHD, string ngayTra, int soLuong, string maSach)
         {
-            return muonTraSachDAL.TraSach(maHD);
+            return muonTraSachDAL.TraSach(maHD, ngayTra, soLuong, maSach);
+        }
+        public DataSet GetListCTHD(HoaDon hoaDon)
+        {
+            return muonTraSachDAL.GetListCTHD(hoaDon);
         }
     }
 }

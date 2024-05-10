@@ -47,8 +47,6 @@ namespace DAL
                         sach.TrangThai = reader.GetInt32(10);
                     if (!reader.IsDBNull(11))
                         sach.HinhAnh = null;
-                    if (!reader.IsDBNull(12))
-                        sach.KhuyenMai = 0;
                     sachs.Add(sach);
                 }
                 sqlConnection.Close();
@@ -58,7 +56,7 @@ namespace DAL
 
         public string ThemSach(Sach sach)
         {
-            string query = "INSERT INTO Sach VALUES ('" + sach.MaSach + "', '" + sach.MaLoaiSach + "', N'" + sach.TenSach + "', N'" + sach.XuatXu + "', N'" + sach.TacGia + "'," + sach.GiaNhap + ", " + sach.GiaChoThue + ", N'" + sach.DonViTinh + "', '" + sach.MaNhaCungCap + "', " + sach.SoLuong + ", " + sach.TrangThai + ", NULL, " + sach.KhuyenMai + ") ";
+            string query = "INSERT INTO Sach VALUES ('" + sach.MaSach + "', '" + sach.MaLoaiSach + "', N'" + sach.TenSach + "', N'" + sach.XuatXu + "', N'" + sach.TacGia + "'," + sach.GiaNhap + ", " + sach.GiaChoThue + ", N'" + sach.DonViTinh + "', '" + sach.MaNhaCungCap + "', " + sach.SoLuong + ", " + sach.TrangThai + ", NULL) ";
 
             try
             {
@@ -100,7 +98,7 @@ namespace DAL
 
         public string SuaSach(Sach sach)
         {
-            string query = "UPDATE Sach SET MaLoaiSach = '" + sach.MaLoaiSach + "', TenSach = N'" + sach.TenSach + "', XuatXu = N'" + sach.XuatXu + "', TacGia = N'" + sach.TacGia + "', GiaNhap = " + sach.GiaNhap + ", GiaChoThue = " + sach.GiaChoThue + ", DonViTinh = N'" + sach.DonViTinh + "', MaNhaCungCap = '" + sach.MaNhaCungCap + "', SoLuong = " + sach.SoLuong + ", TrangThai = " + sach.TrangThai +", KhuyenMai = " + sach.KhuyenMai + " WHERE MaSach = '" + sach.MaSach + "' ";
+            string query = "UPDATE Sach SET MaLoaiSach = '" + sach.MaLoaiSach + "', TenSach = N'" + sach.TenSach + "', XuatXu = N'" + sach.XuatXu + "', TacGia = N'" + sach.TacGia + "', GiaNhap = " + sach.GiaNhap + ", GiaChoThue = " + sach.GiaChoThue + ", DonViTinh = N'" + sach.DonViTinh + "', MaNhaCungCap = '" + sach.MaNhaCungCap + "', SoLuong = " + sach.SoLuong + ", TrangThai = " + sach.TrangThai +" WHERE MaSach = '" + sach.MaSach + "' ";
             try
             {
                 Command(query);

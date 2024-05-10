@@ -11,6 +11,7 @@ namespace DAL
     public class MuonTraSachDAL:DatabaseAccess
     {
         HoaDonDAL HDDAL = new HoaDonDAL();
+        ChiTietHoaDonDAL CTHDDAL = new ChiTietHoaDonDAL();
         public List<HoaDon> GetListHD()
         {
             return HDDAL.GetListHoaDon();
@@ -77,7 +78,7 @@ namespace DAL
         }
         public string InsertHoaDon(HoaDon hoaDon)
         {
-            string query = "INSERT INTO HoaDon VALUES('" + hoaDon.MaHD + "','" + hoaDon.MaDG + "','" + hoaDon.NgayLap + "','" + hoaDon.HanTra + "','" + hoaDon.NgayLap + "'," + hoaDon.SoLuong + "," + hoaDon.TienKhachDua + "," + hoaDon.TienGuiKhach + "," + hoaDon.ThanhTien + "," + hoaDon.TrangThai + ")";
+            string query = "INSERT INTO HoaDon VALUES('" + hoaDon.MaHD + "','" + hoaDon.MaDG + "','" + hoaDon.NgayLap + "','" + hoaDon.HanTra + "', NULL," + hoaDon.SoLuong + "," + hoaDon.TienKhachDua + "," + hoaDon.TienGuiKhach + "," + hoaDon.ThanhTien + "," + hoaDon.TrangThai + ")";
             try
             {
                 Command(query);
@@ -90,7 +91,7 @@ namespace DAL
         }
         public string InsertChitietHoaDon(ChiTietHoaDon cthd)
         {
-            string query = "INSERT INTO ChiTietHoaDon VALUES('" + cthd.MaHD + "','" + cthd.MaSach +"'," + cthd.SoLuong + "," + cthd.DonGia + "," + cthd.ThanhTien + ")";
+            string query = "INSERT INTO ChiTietHoaDon VALUES('" + cthd.MaHD + "','" + cthd.MaSach +"'," + cthd.SoLuong + "," + cthd.DonGia + "," + cthd.ThanhTien + "); update Sach set SoLuong = SoLuong - " + cthd.SoLuong + " where MaSach = '" + cthd.MaSach + "' ";
             try
             {
                 Command(query);
@@ -102,9 +103,9 @@ namespace DAL
             }
         }
 
-        public string TraSach(string maHD)
+        public string TraSach(string maHD, string ngayTra, int soLuong, string maSach)
         {
-            string query = "UPDATE HoaDon SET TrangThai = 0 WHERE MaHD = '" + maHD + "' ";
+            string query = "UPDATE HoaDon SET TrangThai = 0, NgayTra = '" + ngayTra + "' WHERE MaHD = '" + maHD + "'; update Sach set SoLuong = SoLuong + " + soLuong + " where MaSach = '" + maSach +"' ";
             try
             {
                 Command(query);
@@ -115,6 +116,12 @@ namespace DAL
                 return "Fail_Change " + ex.Message;
             }
         }
+
+        public DataSet GetListCTHD(HoaDon hoaDon)
+        {
+            return CTHDDAL.GetCTHD(hoaDon);
+        }
+        
 
     }
 }
