@@ -11,3 +11,16 @@ D:\Project_CSharp\Library_Management\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.
 D:\Project_CSharp\Library_Management\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Project_CSharp\Library_Management\BLL\obj\Debug\BLL.dll
 D:\Project_CSharp\Library_Management\BLL\obj\Debug\BLL.pdb
+D:\Learn\C#\Library-Management\BLL\bin\Debug\LibraryDB.mdf
+D:\Learn\C#\Library-Management\BLL\bin\Debug\LibraryDB_log.ldf
+D:\Learn\C#\Library-Management\BLL\bin\Debug\BLL.dll
+D:\Learn\C#\Library-Management\BLL\bin\Debug\BLL.pdb
+D:\Learn\C#\Library-Management\BLL\bin\Debug\DAL.dll
+D:\Learn\C#\Library-Management\BLL\bin\Debug\DTO.dll
+D:\Learn\C#\Library-Management\BLL\bin\Debug\DAL.pdb
+D:\Learn\C#\Library-Management\BLL\bin\Debug\DTO.pdb
+D:\Learn\C#\Library-Management\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Learn\C#\Library-Management\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Learn\C#\Library-Management\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\Learn\C#\Library-Management\BLL\obj\Debug\BLL.dll
+D:\Learn\C#\Library-Management\BLL\obj\Debug\BLL.pdb

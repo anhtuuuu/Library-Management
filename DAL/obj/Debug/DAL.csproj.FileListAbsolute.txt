@@ -9,3 +9,14 @@ D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.
 D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.dll
 D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.pdb
+D:\Learn\C#\Library-Management\DAL\bin\Debug\LibraryDB.mdf
+D:\Learn\C#\Library-Management\DAL\bin\Debug\LibraryDB_log.ldf
+D:\Learn\C#\Library-Management\DAL\bin\Debug\DAL.dll
+D:\Learn\C#\Library-Management\DAL\bin\Debug\DAL.pdb
+D:\Learn\C#\Library-Management\DAL\bin\Debug\DTO.dll
+D:\Learn\C#\Library-Management\DAL\bin\Debug\DTO.pdb
+D:\Learn\C#\Library-Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Learn\C#\Library-Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Learn\C#\Library-Management\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\Learn\C#\Library-Management\DAL\obj\Debug\DAL.dll
+D:\Learn\C#\Library-Management\DAL\obj\Debug\DAL.pdb

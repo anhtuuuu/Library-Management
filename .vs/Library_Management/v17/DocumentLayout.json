@@ -1,0 +1,480 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Learn\\C#\\Library-Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|d:\\learn\\c#\\library-management\\gui\\form_quanlyhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quanlyhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_quanlyhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quanlyhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|d:\\learn\\c#\\library-management\\gui\\form_nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|D:\\Learn\\C#\\Library-Management\\dal\\docgiadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|solutionrelative:dal\\docgiadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_quanlydocgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quanlydocgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_quanlydocgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quanlydocgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|D:\\Learn\\C#\\Library-Management\\dal\\databaseaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|solutionrelative:dal\\databaseaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE455397-71FC-4EF1-AC8A-2C5211222312}|BLL\\BLL.csproj|D:\\Learn\\C#\\Library-Management\\bll\\docgiabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE455397-71FC-4EF1-AC8A-2C5211222312}|BLL\\BLL.csproj|solutionrelative:bll\\docgiabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_giaodienquanlythuvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_giaodienquanlythuvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|d:\\learn\\c#\\library-management\\gui\\form_loaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_loaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_loaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_loaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|D:\\Learn\\C#\\Library-Management\\dal\\loaisachdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|solutionrelative:dal\\loaisachdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9E210F-D83D-47F3-A18D-6BBC0D39B9B4}|DTO\\DTO.csproj|D:\\Learn\\C#\\Library-Management\\dto\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E210F-D83D-47F3-A18D-6BBC0D39B9B4}|DTO\\DTO.csproj|solutionrelative:dto\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|D:\\Learn\\C#\\Library-Management\\dal\\nhacungcapdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|solutionrelative:dal\\nhacungcapdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE455397-71FC-4EF1-AC8A-2C5211222312}|BLL\\BLL.csproj|D:\\Learn\\C#\\Library-Management\\bll\\muontrasachbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE455397-71FC-4EF1-AC8A-2C5211222312}|BLL\\BLL.csproj|solutionrelative:bll\\muontrasachbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE455397-71FC-4EF1-AC8A-2C5211222312}|BLL\\BLL.csproj|D:\\Learn\\C#\\Library-Management\\bll\\chitiethoadonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE455397-71FC-4EF1-AC8A-2C5211222312}|BLL\\BLL.csproj|solutionrelative:bll\\chitiethoadonbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|D:\\Learn\\C#\\Library-Management\\dal\\thongkedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C32254-1701-44FA-AECD-4C5CD3AA879A}|DAL\\DAL.csproj|solutionrelative:dal\\thongkedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_quanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_quanlytaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|D:\\Learn\\C#\\Library-Management\\gui\\form_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB009A04-DFFB-4896-A7E1-B301766FD994}|GUI\\GUI.csproj|solutionrelative:gui\\form_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 286,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form_NhaCungCap.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_NhaCungCap.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_NhaCungCap.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_NhaCungCap.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_NhaCungCap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:43:28.747Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DocGiaDAL.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\DAL\\DocGiaDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\DocGiaDAL.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\DAL\\DocGiaDAL.cs",
+              "RelativeToolTip": "DAL\\DocGiaDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T12:35:48.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_NhaCungCap.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_NhaCungCap.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_NhaCungCap.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_NhaCungCap.cs",
+              "RelativeToolTip": "GUI\\Form_NhaCungCap.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAawNgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form_QuanLyHoaDon.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuanLyHoaDon.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyHoaDon.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_QuanLyHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.764Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form_QuanLyHoaDon.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuanLyHoaDon.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyHoaDon.cs",
+              "RelativeToolTip": "GUI\\Form_QuanLyHoaDon.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAUwKsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:04:24.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form_QuanLyDocGia.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyDocGia.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuanLyDocGia.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyDocGia.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_QuanLyDocGia.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.736Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatabaseAccess.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\DAL\\DatabaseAccess.cs",
+              "RelativeDocumentMoniker": "DAL\\DatabaseAccess.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\DAL\\DatabaseAccess.cs",
+              "RelativeToolTip": "DAL\\DatabaseAccess.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAgwE4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:46.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DocGiaBLL.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\BLL\\DocGiaBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\DocGiaBLL.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\BLL\\DocGiaBLL.cs",
+              "RelativeToolTip": "BLL\\DocGiaBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T12:35:34.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form_QuanLyDocGia.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyDocGia.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuanLyDocGia.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyDocGia.cs",
+              "RelativeToolTip": "GUI\\Form_QuanLyDocGia.cs",
+              "ViewState": "AQIAANIAAAAAAAAAAAAiwFYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:25:24.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form_GiaoDienQuanLyThuVien.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_GiaoDienQuanLyThuVien.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_GiaoDienQuanLyThuVien.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_GiaoDienQuanLyThuVien.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_GiaoDienQuanLyThuVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.762Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form_LoaiSach.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_LoaiSach.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_LoaiSach.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_LoaiSach.cs",
+              "RelativeToolTip": "GUI\\Form_LoaiSach.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowHcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T14:07:37.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoaiSachDAL.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\DAL\\LoaiSachDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\LoaiSachDAL.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\DAL\\LoaiSachDAL.cs",
+              "RelativeToolTip": "DAL\\LoaiSachDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T14:07:26.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form_LoaiSach.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_LoaiSach.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_LoaiSach.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_LoaiSach.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_LoaiSach.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NhaCungCapDAL.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\DAL\\NhaCungCapDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\NhaCungCapDAL.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\DAL\\NhaCungCapDAL.cs",
+              "RelativeToolTip": "DAL\\NhaCungCapDAL.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Program.cs",
+              "RelativeDocumentMoniker": "GUI\\Program.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Program.cs",
+              "RelativeToolTip": "GUI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form_DangKy.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_DangKy.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_DangKy.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_DangKy.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.748Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form_ThongKe.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_ThongKe.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_ThongKe.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_ThongKe.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_ThongKe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.755Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form_ThongKe.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_ThongKe.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_ThongKe.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_ThongKe.cs",
+              "RelativeToolTip": "GUI\\Form_ThongKe.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAWwFcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form_QuanLySach.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLySach.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuanLySach.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLySach.cs",
+              "RelativeToolTip": "GUI\\Form_QuanLySach.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAzwN0AAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Form_QuanLySach.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLySach.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuanLySach.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLySach.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_QuanLySach.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.76Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Sach.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\DTO\\Sach.cs",
+              "RelativeDocumentMoniker": "DTO\\Sach.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\DTO\\Sach.cs",
+              "RelativeToolTip": "DTO\\Sach.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MuonTraSachBLL.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\BLL\\MuonTraSachBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\MuonTraSachBLL.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\BLL\\MuonTraSachBLL.cs",
+              "RelativeToolTip": "BLL\\MuonTraSachBLL.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAIA/wEAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChiTietHoaDonBLL.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\BLL\\ChiTietHoaDonBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\ChiTietHoaDonBLL.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\BLL\\ChiTietHoaDonBLL.cs",
+              "RelativeToolTip": "BLL\\ChiTietHoaDonBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ThongKeDAL.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\DAL\\ThongKeDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ThongKeDAL.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\DAL\\ThongKeDAL.cs",
+              "RelativeToolTip": "DAL\\ThongKeDAL.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Form_QuenMatKhau.cs",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuenMatKhau.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuenMatKhau.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuenMatKhau.cs",
+              "RelativeToolTip": "GUI\\Form_QuenMatKhau.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAWwGIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Form_QuanLyTaiKhoan.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyTaiKhoan.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_QuanLyTaiKhoan.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_QuanLyTaiKhoan.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_QuanLyTaiKhoan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.764Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Form_DangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_DangNhap.cs",
+              "RelativeDocumentMoniker": "GUI\\Form_DangNhap.cs",
+              "ToolTip": "D:\\Learn\\C#\\Library-Management\\GUI\\Form_DangNhap.cs [Design]",
+              "RelativeToolTip": "GUI\\Form_DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:24:31.765Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
